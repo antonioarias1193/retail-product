@@ -37,6 +37,7 @@
 .product_Content_gallery .image{
     padding: 7px;
     width: calc(100% / 4);
+
 }
 
 .product_Content_gallery .image span{

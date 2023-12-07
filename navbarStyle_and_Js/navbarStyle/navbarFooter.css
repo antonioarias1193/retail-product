@@ -1,7 +1,25 @@
+/* Responsive desktop */
+@media screen and (min-width: 769px){
+    .navbar_footer,
+    .footer_MediaSocial,
+    .footer_copyright p{
+        margin-left: 10vw;
+    }   
+}
+
+/* Responsive mobile */
+@media screen and (max-width: 768px){
+    .navbar_footer,
+    .footer_MediaSocial,
+    .footer_copyright p{
+        margin-left: 5vw;
+    }   
+}
+
+
 .navbar_footer{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
 }
 .navbar_footer .navFooter_Branding{
     margin-block: 30px;
@@ -9,6 +27,7 @@
     font-size: 2rem;
     text-decoration: none;
 }
+
 /* Navbar Menu */
 .navFooter_Links, 
 .navFooter_Dropdown{
@@ -68,7 +87,7 @@
 /* mobile responsive */
 @media screen and (min-width: 768px){
     .navbar_footer{
-        margin-inline: 5vw;
+        margin-right: 9vw;
     }
 }
   
@@ -78,7 +97,6 @@
         display: flex;
         gap: 25px;
         margin-block: 30px;
-        margin-left: 20px;   
     }
     .footer_MediaSocial a{
         text-decoration: none;
@@ -88,17 +106,10 @@
         font-size: 28px;
     }
 
-    /* mobile responsive */
-    @media screen and (min-width: 768px){
-        .footer_MediaSocial{
-            margin-inline: 7vw;
-        }
-    }
 /* ================= Footer Media Social =================== */
 
 /* ================= Footer Copyright =================== */
     .footer_copyright{
-        margin-left: 20px;   
         padding-block: 30px;
         border-top: 2px solid #8e8c8c4c;
     }
