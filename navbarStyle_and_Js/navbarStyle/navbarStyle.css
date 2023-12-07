@@ -17,6 +17,7 @@ body {
   position: fixed;
   width: 100%;
   transition: background-color 0.3s ease-in-out;
+  z-index: 2;
 }
 /* On Active header */
 .navbar_header.active{
