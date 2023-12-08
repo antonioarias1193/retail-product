@@ -51,3 +51,5 @@ dots.forEach((li, key) => {
 		reloadSlider();
 	});
 });
+
+//Dragable

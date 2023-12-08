@@ -101,7 +101,7 @@
   /* mobile Responsive Mode */
   @media screen and (max-width:500px) {
    .buttons button{
-    display: none;
+    /* display: none; */
    }
   }
 
