@@ -8,7 +8,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./navbarStyle_and_Js/navbarStyle/navbarStyle.css">
     <link rel="stylesheet" href="./indexcss/introductionContent.css">
-    <link rel="stylesheet" href="./indexcss/products_ContentCarousel.css">
+    <link rel="stylesheet" href="./indexcss/single_Pages.css">
     <link rel="stylesheet" href="./indexcss/products_Slider_Content.css">
     <link rel="stylesheet" href="./navbarStyle_and_Js/navbarStyle/navbarFooter.css">
 
@@ -34,8 +34,27 @@
                             <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content" id="toggleDropdowncontent">
-                            <a href="./takaware_product/food_container/food_container.html">Food Container</a>
-                            <a href="./takaware_product/beverageware/beverageware.html">Beverageware</a>
+                            <div class="product_category">
+                                <a class="category_links"
+                                    href="./takaware_product/food_container/food_container.html">Food Container</a>
+                                <ul class="spesifict_submenu_product">
+                                    <a href="#Jade">Jade</a>
+                                    <a href="#Cleo">Cleo</a>
+                                    <a href="#Chloe">Chloe</a>
+                                    <a href="#Gemini">Gemini</a>
+                                    <a href="#Cosmo">Cosmo</a>
+                                    <a href="#Luna">Luna</a>
+                                </ul>
+                            </div>
+                            <div class="product_category">
+                                <a class="category_links"
+                                    href="./takaware_product/beverageware/beverageware.html">Beverageware</a>
+                                <ul class="spesifict_submenu_product">
+                                    <a href="#Jade">Zen</a>
+                                    <a href="#Gemini">Kylo</a>
+                                    <a href="#Cosmo">Izzy</a>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -47,8 +66,48 @@
             </div>
         </nav>
         <div class="desktop_nav_Submenu">
-            <a href="./takaware_product/food_container/food_container.html">Food Container</a>
-            <a href="./takaware_product/beverageware/beverageware.html">BeverageWare</a>
+            <div class="product_category">
+                <a class="category_links" href="./takaware_product/food_container/food_container.html">Food
+                    Container</a>
+                <div class="spesifict_submenu_container">
+                    <ul class="spesifict_submenu_product">
+                        <a href="#Jade">
+                            <div class="spesifict_links">Jade</div>
+                        </a>
+                        <a href="#Cleo">
+                            <div class="spesifict_links">Cleo</div>
+                        </a>
+                        <a href="#Chloe">
+                            <div class="spesifict_links"> Chloe</div>
+                        </a>
+                        <a href="#Gemini">
+                            <div class="spesifict_links">Gemini</div>
+                        </a>
+                        <a href="#Cosmo">
+                            <div class="spesifict_links">Cosmo</div>
+                        </a>
+                        <a href="#Luna">
+                            <div class="spesifict_links">Luna</div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="product_category">
+                <a class="category_links" href="./takaware_product/beverageware/beverageware.html">BeverageWare</a>
+                <div class="spesifict_submenu_container">
+                    <ul class="spesifict_submenu_product">
+                        <a href="#Jade">
+                            <div class="spesifict_links">Zen</div>
+                        </a>
+                        <a href="#Gemini">
+                            <div class="spesifict_links">Kylo</div>
+                        </a>
+                        <a href="#Cosmo">
+                            <div class="spesifict_links">Izzy</div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!-- ====================================== Navbar ====================================== -->
@@ -69,23 +128,21 @@
                     <h1>Healthiest Drink</h1>
                     <p>With such an amazing taste</p>
                 </div>
-                <video src="./videoContoh.mp4" muted autoplay loop></video>
+                <video src="./Videos/momotumbler.mp4" muted autoplay loop></video>
             </div>
             <div class="item">
                 <div class="slider_content">
-                    <h1>Gain More Healthy</h1>
-                    <p>Fruit For You</p>
+                    <h1>Colorful Containers</h1>
+                    <p>Lovely to contains with food</p>
                 </div>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Ffree-photo%2Fgirl-washing-vegetables-kitchen-preparation-dinner_23-2148610890.jpg%3Fsize%3D626%26ext%3Djpg&f=1&nofb=1&ipt=4f0b9b7f586fc97e8b4092deeac819fb6427cac36ee6caa9c47e973226c72162&ipo=images"
-                    alt="">
+                <img src="./images/images2/63F0C739-39A2-44A9-B028-EE802D7998C6-53093-00000F70EB9CB633.jpg" alt="">
             </div>
             <div class="item">
                 <div class="slider_content">
-                    <h1>Delicious Vegetables</h1>
+                    <h1>Any Shapes and Benefits</h1>
                     <p>Many Other choises</p>
                 </div>
-                <img src="https://images.pexels.com/photos/11575081/pexels-photo-11575081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                    alt="">
+                <img src="./images/images2/46BF6E76-28C5-46DE-900D-2C6881A22CB1-53093-00000F706E769545.jpg" alt="">
             </div>
 
             <!-- dots -->
@@ -105,29 +162,38 @@
 
     <!-- ====================================== Introduction Content Carousel ====================================== -->
 
-    <!-- ====================================== Products Content Carousel ====================================== -->
-    <div class="product_Content">
-        <div class="product_Content_Title">
-            <h1>Our Products</h1>
-        </div>
-        <!-- Filter Images -->
-        <div class="product_Content_gallery">
-            <div class="image"><span><img src="./images/images3/IMG_1481.JPG" alt=""></span>
+    <!-- ====================================== Single Page Food Containers ====================================== -->
+    <div class="single_Page">
+        <div class="page_container_Food_Container">
+            <div class="container_overlay">
+                <div class="page_text">
+                    <h1>Add safety Takaware airtight containers</h1>
+                    <p>Lessen discomfort and add safety by understanding our lifestyle and getting inspiration from
+                        them.
+                    </p>
+                    <button class="view_more">View More</button>
+                </div>
             </div>
-            <div class="image"><span><img src="./images/images3/IMG_1477.JPG" alt=""></span>
-            </div>
-            <div class="image"><span><img src="./images/images3/IMG_1482.JPG" alt=""></span>
-            </div>
-            <div class="image"><span><img src="./images/images3/IMG_1496.JPG" alt=""></span>
-            </div>
-            <div class="image"><span><img src="./images/images3/IMG_1479.JPG" alt=""></span>
-            </div>
-            <div class="image"><span><img src="./images/images3/IMG_1483.JPG" alt=""></span>
-            </div>
-
         </div>
     </div>
-    <!-- ====================================== Products Content Carousel ====================================== -->
+    <!-- ====================================== Single Page Food Containers ====================================== -->
+
+    <!-- ====================================== Single Page Beveragewares ====================================== -->
+    <div class="single_Page">
+        <div class="page_container_Beveragewares">
+            <div class="container_overlay">
+                <div class="page_text">
+                    <h1>Add story Takaware tumbler</h1>
+                    <p>Create a design and a function with whatever that is in the tumbler to serve as the best
+                        match
+                        for every moment of my life.
+                    </p>
+                    <button class="view_more">View More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ====================================== Single Page Beveragewares ====================================== -->
 
     <!-- ====================================== Products Slider Content ====================================== -->
     <div class="products_slider_content">
@@ -140,25 +206,25 @@
                 <button id="prev-slide" class="slide-button material-symbols-rounded"><i
                         class="fa-solid fa-arrow-left"></i></button>
                 <div class="image-list">
-                    <img src="https://drive.google.com/thumbnail?id=1ak2AefO0dIcGqYc12SpiJgYI9wNU8iJ6" alt=""
+                    <img src="./images/images2/A3B47162-A390-4FDF-97B0-74D4316F534E-53093-00000F7077F1C879.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1HHRQolo13uvc2G6IPIyzCfPotiSCSqoW" alt=""
+                    <img src="./images/images2/E0EA17CC-C28B-4291-A3D4-E11D4550B883-53093-00000F7171520A62.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1xSpg5y2ZJgLOcAChMINEj8QDvI9WR6nZ" alt=""
+                    <img src="./images/images2/004E31C3-7801-4C96-B9C1-524FD7424377-53093-00000F713CE66EEA.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1XBHXHwGifv9TkaYB1jG3YkU3ltv5Bp_q" alt=""
+                    <img src="./images/images2/B63781C9-C119-4C16-A930-08A5198A19C2-53093-00000F70D2E87A12.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1pOiGMbFCC8HIBEkT7cXjMcB6iewjTwzC" alt=""
+                    <img src="./images/images2/D6B3A731-2617-4F21-8BB1-D48BED965AB8-53093-00000F708F483B09.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1PaIWKTgx-gnGCkoYH9ykmEpRrsuDuM0l" alt=""
+                    <img src="./images/images2/63F0C739-39A2-44A9-B028-EE802D7998C6-53093-00000F70EB9CB633.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1AOKrz9rH76QLpuvvYEDOew2akmt-JbNP" alt=""
+                    <img src="./images/images2/AB9FBF9E-FDE7-4E95-8B5E-5F1285C84096-17069-000001BC53752985.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1PaIWKTgx-gnGCkoYH9ykmEpRrsuDuM0l" alt=""
+                    <img src="./images/images2/E673E6D5-B97E-44E3-880B-4C3D3066665D-17069-000001BC713337B5.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1vu2suAv1qIN1TluvafVhD5cmc6OKMAk9" alt=""
+                    <img src="./images/images2/296E2F81-20BA-4BED-88CD-BFA4E5F95400-53093-00000F6FCA190527.jpg" alt=""
                         class="image-item">
-                    <img src="https://drive.google.com/thumbnail?id=1PzQxroR4TcCFY2pJarTeqGGj-KKgwGsh" alt=""
+                    <img src="./images/images2/EDF3CD84-3349-47F8-8F0F-E54BC2162471-53093-00000F717ACB98CD.jpg" alt=""
                         class="image-item">
                 </div>
                 <button id="next-slide" class="slide-button material-symbols-rounded"><i
@@ -189,14 +255,50 @@
                 <i class="fa fa-caret-down"></i>
             </div>
             <div class="dropdown_footer_content" id="toggle_Dropdown_footer">
-                <a href="./takaware_product/food_container/food_container.html">
-                    <div class="links">Food Container</div>
-                </a>
-                <a href="./takaware_product/beverageware/beverageware.html">
-                    <div class="links">Beverageware</div>
-                </a>
+                <div class="footer_product_category">
+                    <a href="./takaware_product/food_container/food_container.html">
+                        <div class="footer_category_links">Food Container</div>
+                    </a>
+                    <ul class="footer_spesifict_submenu_product">
+                        <a href="#Jade">
+                            <div class="footer_spesific_link">Jade</div>
+                        </a>
+                        <a href="#Cleo">
+                            <div class="footer_spesific_link">Cleo</div>
+                        </a>
+                        <a href="#Chloe">
+                            <div class="footer_spesific_link">Chloe</div>
+                        </a>
+                        <a href="#Gemini">
+                            <div class="footer_spesific_link">Gemini</div>
+                        </a>
+                        <a href="#Cosmo">
+                            <div class="footer_spesific_link">Cosmo</div>
+                        </a>
+                        <a href="#Luna">
+                            <div class="footer_spesific_link">Luna</div>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer_product_category">
+                    <a href="./takaware_product/beverageware/beverageware.html">
+                        <div class="footer_category_links">Beverageware</div>
+                    </a>
+                    <ul class="footer_spesifict_submenu_product">
+                        <a href="#Jade">
+                            <div class="footer_spesific_link">Zen</div>
+                        </a>
+                        <a href="#Cleo">
+                            <div class="footer_spesific_link">Kylo</div>
+                        </a>
+                        <a href="#Chloe">
+                            <div class="footer_spesific_link">Izzy</div>
+                        </a>
+                    </ul>
+                </div>
             </div>
-        </button>
+    </div>
+    </button>
     </div>
     <!-- Media Social Footer  -->
     <div class="footer_MediaSocial">

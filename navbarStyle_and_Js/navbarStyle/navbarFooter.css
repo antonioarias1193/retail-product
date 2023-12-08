@@ -60,7 +60,6 @@
     
     margin-top: 20px;
     background-color: rgba(0,0,0,0.02);
-    height: 0;
     transition: 0.2s ease;
 }
 
@@ -72,7 +71,6 @@
 }
 /* Links Product Ketika Diklik */
 .dropdown_footer_content.responsive {
-    height: 150px;
     border-top: 2px solid #8e8c8c4c;
     overflow: hidden;
     
@@ -80,7 +78,7 @@
 .dropdown_footer_content.responsive a{
    display: block;
 }
-.dropdown_footer_content.responsive a .links{
+.dropdown_footer_content.responsive .footer_category_links{
     margin-block: 30px;
 }
   
@@ -90,7 +88,31 @@
         margin-right: 9vw;
     }
 }
-  
+
+  /* ============================== Spesifict Submenu product ============================== */
+
+.footer_product_category .footer_spesifict_submenu_product{
+    display: none;
+    flex-direction: column;
+     background-color: rgba(180, 159, 255, 0.29);
+     margin-top: 30px;
+}
+
+.footer_product_category:hover .footer_spesifict_submenu_product{
+    display: flex;
+
+}
+.footer_spesifict_submenu_product .footer_spesific_link{
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding-left: 40px;
+}
+.footer_spesifict_submenu_product .footer_spesific_link:hover{
+    background-color: rgba(88, 79, 121, 0.29);
+}
+
+/* ============================== Spesifict Submenu product ============================== */
 
 /* ================= Footer Media Social =================== */
     .footer_MediaSocial{
