@@ -33,11 +33,32 @@ hamburger.addEventListener("click", () => {
 
 // Semua isi div navbar ke html
 function navbar_html_classlist() {
-	let navDiv = document.getElementById("js_navbar_class");
+	// =================================== Metode 1 ===========================================
+	let takaware_link_href = document.getElementById("nav_takaware-link");
+	let foodcontainer_link_href = document.getElementById(
+		"nav_foodcontainer-link"
+	);
+	let beveragewares_link_href = document.getElementById(
+		"nav_beveragewares-link"
+	);
 
+	let Desk_foodcontainer_link_href = document.getElementById(
+		"navDesk_foodcontainer-link"
+	);
+	let Desk_beveragewares_link_href = document.getElementById(
+		"navDesk_beveragewares-link"
+	);
+
+	// ========================================================================================
+	// =================================== Metode 2 ===========================================
+	// let ambillink = document.getElementById("ambillink");
+	// console.log(ambillink.href);
+	// ==============================================================================
+
+	let navDiv = document.getElementById("js_navbar_class");
 	navDiv.innerHTML = `
 	<nav class="navbar_container">
-	<a href="/index.html" class="nav_branding">Takaware</a>
+	${takaware_link_href.outerHTML}
 
 	<ul class="nav_menu">
 		<li class="nav_item" href="#">
@@ -50,8 +71,7 @@ function navbar_html_classlist() {
 				</button>
 				<div class="dropdown-content" id="toggleDropdowncontent">
 					<div class="product_category">
-						<a class="category_links"
-							href="/takaware_product/food_container/food_container.html">Food Container</a>
+						${foodcontainer_link_href.outerHTML}
 						<ul class="spesifict_submenu_product">
 							<a href="#Jade">Jade</a>
 							<a href="#Cleo">Cleo</a>
@@ -62,8 +82,7 @@ function navbar_html_classlist() {
 						</ul>
 					</div>
 					<div class="product_category">
-						<a class="category_links"
-							href="/takaware_product/beverageware/beverageware.html">Beverageware</a>
+					${beveragewares_link_href.outerHTML}
 						<ul class="spesifict_submenu_product">
 							<a href="#Jade">Zen</a>
 							<a href="#Gemini">Kylo</a>
@@ -82,8 +101,7 @@ function navbar_html_classlist() {
 </nav>
 <div class="desktop_nav_Submenu">
 	<div class="product_category">
-		<a class="category_links" href="/takaware_product/food_container/food_container.html">Food
-			Container</a>
+		${Desk_foodcontainer_link_href.outerHTML}
 		<div class="spesifict_submenu_container">
 			<ul class="spesifict_submenu_product">
 				<a href="#Jade">
@@ -108,7 +126,7 @@ function navbar_html_classlist() {
 		</div>
 	</div>
 	<div class="product_category">
-		<a class="category_links" href="/takaware_product/beverageware/beverageware.html">BeverageWare</a>
+		${Desk_beveragewares_link_href.outerHTML}
 		<div class="spesifict_submenu_container">
 			<ul class="spesifict_submenu_product">
 				<a href="#Jade">
@@ -128,11 +146,22 @@ function navbar_html_classlist() {
 }
 
 function footer_navbar_html_classlist() {
+	// =================================== Metode 1 ===========================================
+	let takaware_link_href = document.getElementById("footernav_takaware-link");
+	let foodcontainer_link_href = document.getElementById(
+		"footernav_foodcontainer-link"
+	);
+	let beveragewares_link_href = document.getElementById(
+		"footernav_beveragewares-link"
+	);
+
+	// ========================================================================================
+
 	let footer_navdiv = document.getElementById("footer_js_navbar_class");
 
 	footer_navdiv.innerHTML = `
 	<div class="navbar_footer">
-            <a href="/index.html" class="navFooter_Branding">Takaware</a>
+            ${takaware_link_href.outerHTML}
             <a href="#" class="navFooter_Links">
                 <div class="About">
                     About
@@ -146,9 +175,7 @@ function footer_navbar_html_classlist() {
                 </div>
                 <div class="dropdown_footer_content" id="toggle_Dropdown_footer">
                     <div class="footer_product_category">
-                        <a href="/takaware_product/food_container/food_container.html">
-                            <div class="footer_category_links">Food Container</div>
-                        </a>
+                        ${foodcontainer_link_href.outerHTML}
                         <ul class="footer_spesifict_submenu_product">
                             <a href="#Jade">
                                 <div class="footer_spesific_link">Jade</div>
@@ -171,9 +198,7 @@ function footer_navbar_html_classlist() {
                         </ul>
                     </div>
                     <div class="footer_product_category">
-                        <a href="/takaware_product/beverageware/beverageware.html">
-                            <div class="footer_category_links">Beverageware</div>
-                        </a>
+						${beveragewares_link_href.outerHTML}
                         <ul class="footer_spesifict_submenu_product">
                             <a href="#Jade">
                                 <div class="footer_spesific_link">Zen</div>
