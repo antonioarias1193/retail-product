@@ -33,36 +33,34 @@ hamburger.addEventListener("click", () => {
 
 // Semua isi div navbar ke html
 function navbar_html_classlist() {
-	// =================================== Metode 1 ===========================================
-	let takaware_link_href = document.getElementById("nav_takaware-link");
-	let foodcontainer_link_href = document.getElementById(
-		"nav_foodcontainer-link"
-	);
-	let beveragewares_link_href = document.getElementById(
-		"nav_beveragewares-link"
-	);
+	// navlinks
+	const takaware_Header = "./index.html";
 
-	let Desk_foodcontainer_link_href = document.getElementById(
-		"navDesk_foodcontainer-link"
-	);
-	let Desk_beveragewares_link_href = document.getElementById(
-		"navDesk_beveragewares-link"
-	);
+	const about_menu = "#";
 
-	// ========================================================================================
-	// =================================== Metode 2 ===========================================
-	// let ambillink = document.getElementById("ambillink");
-	// console.log(ambillink.href);
-	// ==============================================================================
+	const foodContainer_categories = "./food_container.html";
+	const beveragewares_categories = "./beverageware.html";
+
+	const jade_foodcontainer = "./jade_food_container.html";
+	const cleo_foodcontainer = "./cleo_food_container.html";
+	const chloe_foodcontainer = "./chloe_food_container.html";
+	const gemini_foodcontainer = "./gemini_food_container.html";
+	const cosmo_foodcontainer = "./cosmo_food_container.html";
+	const luna_foodcontainer = "./luna_food_container.html";
+
+	const zen_beveragewares = "./zen_beverageware.html";
+	const kylo_beveragewares = "./kylo_beverageware.html";
+	const izzy_beveragewares = "./izzy_beverageware.html";
+	// navlinks
 
 	let navDiv = document.getElementById("js_navbar_class");
 	navDiv.innerHTML = `
 	<nav class="navbar_container">
-	${takaware_link_href.outerHTML}
+	<a href="${takaware_Header}" class="nav_branding">Takaware</a>
 
 	<ul class="nav_menu">
-		<li class="nav_item" href="#">
-			<a href="#" class="nav_link">About</a>
+		<li class="nav_item">
+			<a href="${about_menu}" class="nav_link">About</a>
 		</li>
 		<li class="nav_item">
 			<div class="dropdown">
@@ -71,22 +69,22 @@ function navbar_html_classlist() {
 				</button>
 				<div class="dropdown-content" id="toggleDropdowncontent">
 					<div class="product_category">
-						${foodcontainer_link_href.outerHTML}
+					<a href="${foodContainer_categories}" class="category_links">Food Container</a>
 						<ul class="spesifict_submenu_product">
-							<a href="#Jade">Jade</a>
-							<a href="#Cleo">Cleo</a>
-							<a href="#Chloe">Chloe</a>
-							<a href="#Gemini">Gemini</a>
-							<a href="#Cosmo">Cosmo</a>
-							<a href="#Luna">Luna</a>
+							<a href="${jade_foodcontainer}">Jade</a>
+							<a href="${cleo_foodcontainer}">Cleo</a>
+							<a href="${chloe_foodcontainer}">Chloe</a>
+							<a href="${gemini_foodcontainer}">Gemini</a>
+							<a href="${cosmo_foodcontainer}">Cosmo</a>
+							<a href="${luna_foodcontainer}">Luna</a>
 						</ul>
 					</div>
 					<div class="product_category">
-					${beveragewares_link_href.outerHTML}
+					<a class="category_links" href="${beveragewares_categories}">Beverageware</a>
 						<ul class="spesifict_submenu_product">
-							<a href="#Jade">Zen</a>
-							<a href="#Gemini">Kylo</a>
-							<a href="#Cosmo">Izzy</a>
+							<a href="${zen_beveragewares}">Zen</a>
+							<a href="${kylo_beveragewares}">Kylo</a>
+							<a href="${izzy_beveragewares}">Izzy</a>
 						</ul>
 					</div>
 				</div>
@@ -101,41 +99,43 @@ function navbar_html_classlist() {
 </nav>
 <div class="desktop_nav_Submenu">
 	<div class="product_category">
-		${Desk_foodcontainer_link_href.outerHTML}
+	<a class="category_links" href="${foodContainer_categories}">Food
+	Container</a>
 		<div class="spesifict_submenu_container">
 			<ul class="spesifict_submenu_product">
-				<a href="#Jade">
+				<a href="${jade_foodcontainer}">
 					<div class="spesifict_links">Jade</div>
 				</a>
-				<a href="#Cleo">
+				<a href="${cleo_foodcontainer}">
 					<div class="spesifict_links">Cleo</div>
 				</a>
-				<a href="#Chloe">
+				<a href="${chloe_foodcontainer}">
 					<div class="spesifict_links"> Chloe</div>
 				</a>
-				<a href="#Gemini">
+				<a href="${gemini_foodcontainer}">
 					<div class="spesifict_links">Gemini</div>
 				</a>
-				<a href="#Cosmo">
+				<a href="${cosmo_foodcontainer}">
 					<div class="spesifict_links">Cosmo</div>
 				</a>
-				<a href="#Luna">
+				<a href="${luna_foodcontainer}">
 					<div class="spesifict_links">Luna</div>
 				</a>
 			</ul>
 		</div>
 	</div>
 	<div class="product_category">
-		${Desk_beveragewares_link_href.outerHTML}
+	<a class="category_links" href="${beveragewares_categories}">BeverageWare</a>
+
 		<div class="spesifict_submenu_container">
 			<ul class="spesifict_submenu_product">
-				<a href="#Jade">
+				<a href="${zen_beveragewares}">
 					<div class="spesifict_links">Zen</div>
 				</a>
-				<a href="#Gemini">
+				<a href="${kylo_beveragewares}">
 					<div class="spesifict_links">Kylo</div>
 				</a>
-				<a href="#Cosmo">
+				<a href="${izzy_beveragewares}">
 					<div class="spesifict_links">Izzy</div>
 				</a>
 			</ul>
@@ -146,28 +146,37 @@ function navbar_html_classlist() {
 }
 
 function footer_navbar_html_classlist() {
-	// =================================== Metode 1 ===========================================
-	let takaware_link_href = document.getElementById("footernav_takaware-link");
-	let foodcontainer_link_href = document.getElementById(
-		"footernav_foodcontainer-link"
-	);
-	let beveragewares_link_href = document.getElementById(
-		"footernav_beveragewares-link"
-	);
+	// navlinks
+	const takaware_Header = "./index.html";
 
-	// ========================================================================================
+	const about_menu = "#";
+
+	const foodContainer_categories = "./food_container.html";
+	const beveragewares_categories = "./beverageware.html";
+
+	const jade_foodcontainer = "./jade_food_container.html";
+	const cleo_foodcontainer = "./cleo_food_container.html";
+	const chloe_foodcontainer = "./chloe_food_container.html";
+	const gemini_foodcontainer = "./gemini_food_container.html";
+	const cosmo_foodcontainer = "./cosmo_food_container.html";
+	const luna_foodcontainer = "./luna_food_container.html";
+
+	const zen_beveragewares = "./zen_beverageware.html";
+	const kylo_beveragewares = "./kylo_beverageware.html";
+	const izzy_beveragewares = "./izzy_beverageware.html";
+	// navlinks
 
 	let footer_navdiv = document.getElementById("footer_js_navbar_class");
 
 	footer_navdiv.innerHTML = `
 	<div class="navbar_footer">
-            ${takaware_link_href.outerHTML}
-            <a href="#" class="navFooter_Links">
+	<a href="${takaware_Header}" class="navFooter_Branding">Takaware</a>
+            <a href="${about_menu}" class="navFooter_Links">
                 <div class="About">
                     About
-
                 </div>
             </a>
+
             <button class="navFooter_Dropdown" onclick="dropdown_footer_Function()">
                 <div class="Product">
                     Product
@@ -175,38 +184,42 @@ function footer_navbar_html_classlist() {
                 </div>
                 <div class="dropdown_footer_content" id="toggle_Dropdown_footer">
                     <div class="footer_product_category">
-                        ${foodcontainer_link_href.outerHTML}
+					<a href="${foodContainer_categories}">
+					<div class="footer_category_links">Food Container</div>
+				</a>
                         <ul class="footer_spesifict_submenu_product">
-                            <a href="#Jade">
+                            <a href="${jade_foodcontainer}">
                                 <div class="footer_spesific_link">Jade</div>
                             </a>
-                            <a href="#Cleo">
+                            <a href="${cleo_foodcontainer}">
                                 <div class="footer_spesific_link">Cleo</div>
                             </a>
-                            <a href="#Chloe">
+                            <a href="${chloe_foodcontainer}">
                                 <div class="footer_spesific_link">Chloe</div>
                             </a>
-                            <a href="#Gemini">
+                            <a href="${gemini_foodcontainer}">
                                 <div class="footer_spesific_link">Gemini</div>
                             </a>
-                            <a href="#Cosmo">
+                            <a href="${cosmo_foodcontainer}">
                                 <div class="footer_spesific_link">Cosmo</div>
                             </a>
-                            <a href="#Luna">
+                            <a href="${luna_foodcontainer}">
                                 <div class="footer_spesific_link">Luna</div>
                             </a>
                         </ul>
                     </div>
                     <div class="footer_product_category">
-						${beveragewares_link_href.outerHTML}
+					<a href="${beveragewares_categories}">
+					<div class="footer_category_links">Beverageware</div>
+				</a>
                         <ul class="footer_spesifict_submenu_product">
-                            <a href="#Jade">
+                            <a href="${zen_beveragewares}">
                                 <div class="footer_spesific_link">Zen</div>
                             </a>
-                            <a href="#Cleo">
+                            <a href="${kylo_beveragewares}">
                                 <div class="footer_spesific_link">Kylo</div>
                             </a>
-                            <a href="#Chloe">
+                            <a href="${izzy_beveragewares}">
                                 <div class="footer_spesific_link">Izzy</div>
                             </a>
                         </ul>
