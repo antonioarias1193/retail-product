@@ -1,10 +1,11 @@
 /* ====== Container each ====== */
-
 .product_description_afterparallax .product_container_left,
 .product_description_afterparallax .product_container_right{
     display: flex;
     align-items: center;
 }
+
+
 .product_description_afterparallax .product_text_container{
     width: 40%;
 }
@@ -24,12 +25,21 @@
     /* Top Container */
     .product_description_afterparallax{
         margin-block: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
     }
     /* Top Container */
     .product_description_afterparallax .images_container{
         height: 400px;
         width: 400px;
     }
+    .product_description_afterparallax .product_container_right .images{
+        height: 150%;
+        width: 100%;
+        background-position-x: -50px;
+    }
+
     .product_description_afterparallax .product_text_container{
         width: 40%;
     }
