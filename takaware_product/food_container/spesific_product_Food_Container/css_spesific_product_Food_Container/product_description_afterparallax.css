@@ -1,44 +1,40 @@
-.product_description_afterparallax{
     /* ====== Container left ====== */
-    .product_container_left{
+    .product_description_afterparallax .product_container_left{
         flex-direction: row;
-       
-        .product_text_container{
-            transform: translateX(40%);
-        }
+    }
+    .product_description_afterparallax .product_container_left .product_text_container{
+        transform: translateX(40%);
     }
     /* ====== Container right ====== */
-    .product_container_right{
+    .product_description_afterparallax .product_container_right{
         flex-direction: row-reverse;
-
-        .product_text_container{
-            transform: translateX(-40%);
-        }
+    }
+    .product_description_afterparallax .product_container_right .product_text_container{
+        transform: translateX(-40%);
     }
     
     /* ====== Container each ====== */
-    .product_container_left,
-    .product_container_right{
+    .product_description_afterparallax .product_container_left,
+    .product_description_afterparallax .product_container_right{
         height: 80vh;
         display: flex;
         align-items: center;
-        .product_text_container{
-            width: 40%;
-        }
-        .product_text_container p {
-            font-size: 1.2rem;
-        }
-        .images_container{
-            overflow: hidden;
-            height: 400px;
-            width: 400px;
-            .images{
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 100%;
-                
-            }
-        }
+    }
+    .product_description_afterparallax .product_text_container{
+        width: 40%;
+    }
+    .product_description_afterparallax .product_text_container p {
+        font-size: 1.2rem;
+    }
+    .product_description_afterparallax .images_container{
+        overflow: hidden;
+        height: 400px;
+        width: 400px;
+    }
+    .product_description_afterparallax .images{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        
     }
     
-}
