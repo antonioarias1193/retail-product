@@ -5,13 +5,17 @@ body{
     background-image: url("../../../images/images2/2FF747D4-0ED6-4ED4-92FC-F376688E5C3A-53093-00000F705E4BC7F6.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 100vh;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    overflow: hidden;
     /* Overlay Shadow */
 }
 .foodcontainer_Content .foodcontainer_overlay{
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
+    -webkit-mask: url("../../../images/images2/2FF747D4-0ED6-4ED4-92FC-F376688E5C3A-53093-00000F705E4BC7F6.jpg");
+            mask: url("../../../images/images2/2FF747D4-0ED6-4ED4-92FC-F376688E5C3A-53093-00000F705E4BC7F6.jpg");
     /* Text div */
 }
 .foodcontainer_Content .foodcontainer_text{
@@ -23,6 +27,7 @@ body{
 /* Text h1 */
 .foodcontainer_Content .foodcontainer_text h1{
     color: white;
+    position: fixed;
     text-shadow: 5px 5px 5px black;
 }
 

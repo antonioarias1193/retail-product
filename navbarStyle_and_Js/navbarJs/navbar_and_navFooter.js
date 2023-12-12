@@ -36,7 +36,7 @@ function navbar_html_classlist() {
 	// navlinks
 	const takaware_Header = "./index.html";
 
-	const about_menu = "#";
+	const about_menu = "./about.html";
 
 	const foodContainer_categories = "./food_container.html";
 	const beveragewares_categories = "./beverageware.html";
@@ -149,7 +149,7 @@ function footer_navbar_html_classlist() {
 	// navlinks
 	const takaware_Header = "./index.html";
 
-	const about_menu = "#";
+	const about_menu = "./about.html";
 
 	const foodContainer_categories = "./food_container.html";
 	const beveragewares_categories = "./beverageware.html";

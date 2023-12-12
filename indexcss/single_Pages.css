@@ -16,7 +16,7 @@
 .single_Page .container_overlay{
     display: flex;
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.641);
+    /* background-color: rgba(0, 0, 0, 0.641); */
     height: 100%;
     width: 100%;
 }
