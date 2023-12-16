@@ -1,26 +1,7 @@
 navbar_html_classlist(); // memanggil html div class (posisi wajib paling atas)
 footer_navbar_html_classlist(); // memanggil html div class (posisi wajib paling atas)
 
-// Navbar DropDown Products
-function dropdownFunction() {
-	var x = document.getElementById("toggleDropdowncontent");
-	if (x.className === "dropdown-content") {
-		x.className += " responsive";
-	} else {
-		x.className = "dropdown-content";
-	}
-}
-// Navbar DropDown Footer Products
-function dropdown_footer_Function() {
-	var x = document.getElementById("toggle_Dropdown_footer");
-	if (x.className === "dropdown_footer_content") {
-		x.className += " responsive";
-	} else {
-		x.className = "dropdown_footer_content";
-	}
-}
-
-// Menu List Navbar
+// ==================== Mobile Menu List Navbar ====================
 const navbarHeader = document.querySelector(".navbar_header");
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav_menu");
@@ -30,6 +11,131 @@ hamburger.addEventListener("click", () => {
 	hamburger.classList.toggle("active");
 	navMenu.classList.toggle("active");
 });
+// ==================== Mobile Menu List Navbar ====================
+
+// ==================================== Desktop Hover Dropdown Spesific Product ====================================
+let layar_DesktopResponsive = window.innerWidth;
+if (layar_DesktopResponsive > 768) {
+	// ==================================== Desktop Access Mode ====================================
+	// ------------- Food Container --------------------
+	let onHover_FoodContainer = document.getElementById(
+		"desk_hoverFoodContainer"
+	);
+	let desk_content_FoodContainer = document.getElementById(
+		"food_container_dropdown"
+	);
+
+	onHover_FoodContainer.addEventListener("mouseover", function (event) {
+		if (desk_content_FoodContainer.clientHeight === 0) {
+			// Jika tinggi nol, atur tinggi ke tinggi scroll content
+			desk_content_FoodContainer.style.height =
+				desk_content_FoodContainer.scrollHeight + 20 + "px";
+		}
+	});
+	onHover_FoodContainer.addEventListener("mouseleave", function (event) {
+		// Jika tinggi bukan nol, atur tinggi ke nol
+		desk_content_FoodContainer.style.height = 0;
+	});
+
+	// ------------- Beveragewares --------------------
+	let onHover_Beveragewares = document.getElementById("desk_hoverBeverageware");
+	let desk_content_Beveragewares = document.getElementById(
+		"beverageware_dropdown"
+	);
+
+	onHover_Beveragewares.addEventListener("mouseover", function (event) {
+		if (desk_content_Beveragewares.clientHeight === 0) {
+			// Jika tinggi nol, atur tinggi ke tinggi scroll content
+			desk_content_Beveragewares.style.height =
+				desk_content_Beveragewares.scrollHeight + 20 + "px";
+		}
+	});
+	onHover_Beveragewares.addEventListener("mouseleave", function (event) {
+		// Jika tinggi bukan nol, atur tinggi ke nol
+		desk_content_Beveragewares.style.height = 0;
+	});
+	// ------------- Beveragewares --------------------
+	// ==================================== Desktop Access Mode ====================================
+}
+
+// ==================================== Desktop Hover Dropdown Spesific Product ====================================
+// ==================================== Mobile CLick Dropdown Button ====================================
+// Navbar DropDown Menu Products
+if (layar_DesktopResponsive < 768) {
+	// ==================================== Mobile Access Mode ====================================
+	let categories_dropdown = document.getElementById(
+		"toggle_Dropdown_Navbar_Menu"
+	);
+	let categories_dropdown_temporary;
+	// Set tinggi elemen ke tinggi scroll content
+	// categories_dropdown.style.height = 0;
+	function dropdownFunction() {
+		if (categories_dropdown.clientHeight === 0) {
+			// Jika tinggi nol, atur tinggi ke tinggi scroll content
+			categories_dropdown.style.height =
+				categories_dropdown.scrollHeight + "px";
+			categories_dropdown_temporary = categories_dropdown.scrollHeight;
+		} else {
+			// Jika tinggi bukan nol, atur tinggi ke nol
+			categories_dropdown.style.height = 0;
+		}
+	}
+
+	// === Food Container ===
+	// Set tinggi elemen ke tinggi scroll content
+	let food_container_spesific_dropdown = document.getElementById(
+		"food_container_dropdown"
+	);
+
+	function food_container_categoriesDropdown() {
+		if (food_container_spesific_dropdown.clientHeight === 0) {
+			// Jika tinggi nol, atur tinggi ke tinggi scroll content
+			food_container_spesific_dropdown.style.height =
+				food_container_spesific_dropdown.scrollHeight + "px";
+			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
+			categories_dropdown.style.height =
+				categories_dropdown_temporary +
+				food_container_spesific_dropdown.scrollHeight +
+				"px";
+			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
+			beverageware_spesific_dropdown.style.height = 0;
+		} else {
+			// Jika tinggi bukan nol, atur tinggi ke nol
+			food_container_spesific_dropdown.style.height = 0;
+			categories_dropdown.style.height = categories_dropdown_temporary + "px";
+		}
+	}
+	// === Food Container ===
+
+	// === Beveragewares ===
+	// Set tinggi elemen ke tinggi scroll content
+	let beverageware_spesific_dropdown = document.getElementById(
+		"beverageware_dropdown"
+	);
+
+	function beverageware_categoriesDropdown() {
+		if (beverageware_spesific_dropdown.clientHeight === 0) {
+			// Jika tinggi nol, atur tinggi ke tinggi scroll content
+			beverageware_spesific_dropdown.style.height =
+				beverageware_spesific_dropdown.scrollHeight + "px";
+			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
+			categories_dropdown.style.height =
+				beverageware_spesific_dropdown.scrollHeight +
+				categories_dropdown_temporary +
+				"px";
+			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
+			food_container_spesific_dropdown.style.height = 0;
+		} else {
+			// Jika tinggi bukan nol, atur tinggi ke nol
+			beverageware_spesific_dropdown.style.height = 0;
+			categories_dropdown.style.height = categories_dropdown_temporary + "px";
+		}
+	}
+	// === Beveragewares ===
+	// ==================================== Mobile Access Mode ====================================
+}
+
+// ==================================== Mobile CLick Dropdown Button ====================================
 
 // Semua isi div navbar ke html
 function navbar_html_classlist() {
@@ -56,94 +162,132 @@ function navbar_html_classlist() {
 	let navDiv = document.getElementById("js_navbar_class");
 	navDiv.innerHTML = `
 	<nav class="navbar_container">
-	<a href="${takaware_Header}" class="nav_branding">Takaware</a>
-
-	<ul class="nav_menu">
-		<li class="nav_item">
-			<a href="${about_menu}" class="nav_link">About</a>
-		</li>
-		<li class="nav_item">
-			<div class="dropdown">
-				<button class="dropbtn" onclick="dropdownFunction()">Product
-					<i class="fa fa-caret-down"></i>
-				</button>
-				<div class="dropdown-content" id="toggleDropdowncontent">
-					<div class="product_category">
-					<a href="${foodContainer_categories}" class="category_links">Food Container</a>
-						<ul class="spesifict_submenu_product">
-							<a href="${jade_foodcontainer}">Jade</a>
-							<a href="${cleo_foodcontainer}">Cleo</a>
-							<a href="${chloe_foodcontainer}">Chloe</a>
-							<a href="${gemini_foodcontainer}">Gemini</a>
-							<a href="${cosmo_foodcontainer}">Cosmo</a>
-							<a href="${luna_foodcontainer}">Luna</a>
-						</ul>
-					</div>
-					<div class="product_category">
-					<a class="category_links" href="${beveragewares_categories}">Beverageware</a>
-						<ul class="spesifict_submenu_product">
-							<a href="${zen_beveragewares}">Zen</a>
-							<a href="${kylo_beveragewares}">Kylo</a>
-							<a href="${izzy_beveragewares}">Izzy</a>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</li>
-	</ul>
-	<div class="hamburger">
-		<span class="bar"></span>
-		<span class="bar"></span>
-		<span class="bar"></span>
-	</div>
-</nav>
-<div class="desktop_nav_Submenu">
-	<div class="product_category">
-	<a class="category_links" href="${foodContainer_categories}">Food
-	Container</a>
-		<div class="spesifict_submenu_container">
-			<ul class="spesifict_submenu_product">
-				<a href="${jade_foodcontainer}">
-					<div class="spesifict_links">Jade</div>
-				</a>
-				<a href="${cleo_foodcontainer}">
-					<div class="spesifict_links">Cleo</div>
-				</a>
-				<a href="${chloe_foodcontainer}">
-					<div class="spesifict_links"> Chloe</div>
-				</a>
-				<a href="${gemini_foodcontainer}">
-					<div class="spesifict_links">Gemini</div>
-				</a>
-				<a href="${cosmo_foodcontainer}">
-					<div class="spesifict_links">Cosmo</div>
-				</a>
-				<a href="${luna_foodcontainer}">
-					<div class="spesifict_links">Luna</div>
-				</a>
-			</ul>
-		</div>
-	</div>
-	<div class="product_category">
-	<a class="category_links" href="${beveragewares_categories}">BeverageWare</a>
-
-		<div class="spesifict_submenu_container">
-			<ul class="spesifict_submenu_product">
-				<a href="${zen_beveragewares}">
-					<div class="spesifict_links">Zen</div>
-				</a>
-				<a href="${kylo_beveragewares}">
-					<div class="spesifict_links">Kylo</div>
-				</a>
-				<a href="${izzy_beveragewares}">
-					<div class="spesifict_links">Izzy</div>
-				</a>
-			</ul>
-		</div>
-	</div>
-</div>
+            <a href="${takaware_Header}" class="nav_branding">Takaware</a>
+        
+            <ul class="nav_menu">
+                <li class="nav_item">
+                    <a href="${about_menu}" class="nav_link">About</a>
+                </li>
+                <li class="nav_item">
+                    <div class="dropdown">
+                        <button class="dropbtn" onclick="dropdownFunction()">Product
+                            <i class="dropdown_icon fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content" id="toggle_Dropdown_Navbar_Menu">
+                            <div class="product_category" id="desk_hoverFoodContainer">
+                                <div class="product_category_links_dropdown" >
+                                <a href="${foodContainer_categories}" class="category_links">Food Container</a>
+                                <button onclick="food_container_categoriesDropdown()" class="dropdown_spesific_menu"><i class="dropdown_icon fa fa-caret-down"></i></button>
+                                </div>
+                                <ul id="food_container_dropdown" class="spesifict_submenu_product">
+                                    <a href="${jade_foodcontainer}">Jade</a>
+                                    <a href="${cleo_foodcontainer}">Cleo</a>
+                                    <a href="${chloe_foodcontainer}">Chloe</a>
+                                    <a href="${gemini_foodcontainer}">Gemini</a>
+                                    <a href="${cosmo_foodcontainer}">Cosmo</a>
+                                    <a href="${luna_foodcontainer}">Luna</a>
+                                </ul>
+                            </div>
+                            <div class="product_category" id="desk_hoverBeverageware">
+                                <div class="product_category_links_dropdown">
+                                    <a class="category_links" href="${beveragewares_categories}">Beverageware</a>
+                                    <button onclick="beverageware_categoriesDropdown()" class="dropdown_spesific_menu"><i class="dropdown_icon fa fa-caret-down"></i></button>
+                                </div>
+                                <div>
+                                    <ul id="beverageware_dropdown" class="spesifict_submenu_product">
+                                        <a href="${zen_beveragewares}">Zen</a>
+                                        <a href="${kylo_beveragewares}">Kylo</a>
+                                        <a href="${izzy_beveragewares}">Izzy</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
 	`;
 }
+
+// ===================================================== Footer =====================================================
+// Navbar DropDown Menu Products
+let footer_categories_dropdown = document.getElementById(
+	"toggle_Dropdown_footer"
+);
+let footer_categories_dropdown_temporary;
+// Set tinggi elemen ke tinggi scroll content
+// categories_dropdown.style.height = 0;
+function dropdown_footer_Function() {
+	if (footer_categories_dropdown.clientHeight === 0) {
+		// Jika tinggi nol, atur tinggi ke tinggi scroll content
+		footer_categories_dropdown.style.height =
+			footer_categories_dropdown.scrollHeight + "px";
+		footer_categories_dropdown_temporary =
+			footer_categories_dropdown.scrollHeight;
+	} else {
+		// Jika tinggi bukan nol, atur tinggi ke nol
+		footer_categories_dropdown.style.height = 0;
+	}
+}
+
+// === Footer Food Container ===
+// Set tinggi elemen ke tinggi scroll content
+let footer_food_container_spesific_dropdown = document.getElementById(
+	"footer_food_container_dropdown"
+);
+
+function footer_food_container_categoriesDropdown() {
+	if (footer_food_container_spesific_dropdown.clientHeight === 0) {
+		// Jika tinggi nol, atur tinggi ke tinggi scroll content
+		footer_food_container_spesific_dropdown.style.height =
+			footer_food_container_spesific_dropdown.scrollHeight + "px";
+		// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
+		footer_categories_dropdown.style.height =
+			footer_categories_dropdown_temporary +
+			footer_food_container_spesific_dropdown.scrollHeight +
+			"px";
+		// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
+		footer_beverageware_spesific_dropdown.style.height = 0;
+	} else {
+		// Jika tinggi bukan nol, atur tinggi ke nol
+		footer_food_container_spesific_dropdown.style.height = 0;
+		footer_categories_dropdown.style.height =
+			footer_categories_dropdown_temporary + "px";
+	}
+}
+// === Footer Food Container ===
+
+// === Footer Food Container ===
+// Set tinggi elemen ke tinggi scroll content
+let footer_beverageware_spesific_dropdown = document.getElementById(
+	"footer_beverageware_dropdown"
+);
+
+function footer_beverageware_categoriesDropdown() {
+	if (footer_beverageware_spesific_dropdown.clientHeight === 0) {
+		// Jika tinggi nol, atur tinggi ke tinggi scroll content
+		footer_beverageware_spesific_dropdown.style.height =
+			footer_beverageware_spesific_dropdown.scrollHeight + "px";
+		// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
+		footer_categories_dropdown.style.height =
+			footer_categories_dropdown_temporary +
+			footer_beverageware_spesific_dropdown.scrollHeight +
+			"px";
+		// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
+		footer_food_container_spesific_dropdown.style.height = 0;
+	} else {
+		// Jika tinggi bukan nol, atur tinggi ke nol
+		footer_beverageware_spesific_dropdown.style.height = 0;
+		footer_categories_dropdown.style.height =
+			footer_categories_dropdown_temporary + "px";
+	}
+}
+// === Footer Food Container ===
 
 function footer_navbar_html_classlist() {
 	// navlinks
@@ -176,18 +320,21 @@ function footer_navbar_html_classlist() {
                     About
                 </div>
             </a>
-
             <button class="navFooter_Dropdown" onclick="dropdown_footer_Function()">
-                <div class="Product">
-                    Product
-                    <i class="fa fa-caret-down"></i>
-                </div>
+				<div class="Product">
+					Product
+					<i class="fa fa-caret-down"></i>
+				</div>
+			</button>
                 <div class="dropdown_footer_content" id="toggle_Dropdown_footer">
                     <div class="footer_product_category">
-					<a href="${foodContainer_categories}">
-					<div class="footer_category_links">Food Container</div>
-				</a>
-                        <ul class="footer_spesifict_submenu_product">
+						<div class="footer_container_foodcontainer_dropdown">
+							<a href="${foodContainer_categories}">
+								<div class="footer_category_links">Food Container</div>
+							</a>
+							<div onclick="footer_food_container_categoriesDropdown()" class="footer_spesific_dropdown_button"><i class="fa fa-caret-down"></i></div>
+						</div>
+                        <ul id="footer_food_container_dropdown" class="footer_spesifict_submenu_product">
                             <a href="${jade_foodcontainer}">
                                 <div class="footer_spesific_link">Jade</div>
                             </a>
@@ -209,10 +356,13 @@ function footer_navbar_html_classlist() {
                         </ul>
                     </div>
                     <div class="footer_product_category">
-					<a href="${beveragewares_categories}">
-					<div class="footer_category_links">Beverageware</div>
-				</a>
-                        <ul class="footer_spesifict_submenu_product">
+						<div class="footer_container_foodcontainer_dropdown">
+							<a href="${beveragewares_categories}">
+								<div class="footer_category_links">Beverageware</div>
+							</a>
+							<div onclick="footer_beverageware_categoriesDropdown()" class="footer_spesific_dropdown_button"><i class="fa fa-caret-down"></i></div>
+						</div>
+                        <ul id="footer_beverageware_dropdown" class="footer_spesifict_submenu_product">
                             <a href="${zen_beveragewares}">
                                 <div class="footer_spesific_link">Zen</div>
                             </a>
@@ -226,7 +376,6 @@ function footer_navbar_html_classlist() {
                     </div>
                 </div>
         </div>
-        </button>
     </div>
     <!-- Media Social Footer  -->
     <div class="footer_MediaSocial">
