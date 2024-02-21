@@ -2,7 +2,7 @@ body{
     width: 100%;
 }
 .beverageware_Content{
-    background-image: url("../../../images/images2/46BF6E76-28C5-46DE-900D-2C6881A22CB1-53093-00000F706E769545.jpg");
+    background-image: url("../../../images/products/beveragewares/izzy/izzy-index3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -14,8 +14,8 @@ body{
 .beverageware_Content .beverageware_overlay{
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
-    -webkit-mask: url("../../../images/images2/46BF6E76-28C5-46DE-900D-2C6881A22CB1-53093-00000F706E769545.jpg");
-            mask: url("../../../images/images2/46BF6E76-28C5-46DE-900D-2C6881A22CB1-53093-00000F706E769545.jpg");
+    -webkit-mask: url("../../../images/products/beveragewares/izzy/izzy-index3.jpg");
+            mask: url("../../../images/products/beveragewares/izzy/izzy-index3.jpg");
     /* Text div */
 }
 .beverageware_Content .beverageware_text{

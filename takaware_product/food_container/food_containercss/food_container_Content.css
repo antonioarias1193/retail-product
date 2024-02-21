@@ -2,7 +2,7 @@ body{
     width: 100%;
 }
 .foodcontainer_Content{
-    background-image: url("../../../images/images2/2FF747D4-0ED6-4ED4-92FC-F376688E5C3A-53093-00000F705E4BC7F6.jpg");
+    background-image: url("../../../images/products/food_container/cosmo/cosmo-index.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -14,8 +14,8 @@ body{
 .foodcontainer_Content .foodcontainer_overlay{
     background-color: rgba(0, 0, 0, 0.2);
     height: 100%;
-    -webkit-mask: url("../../../images/images2/2FF747D4-0ED6-4ED4-92FC-F376688E5C3A-53093-00000F705E4BC7F6.jpg");
-            mask: url("../../../images/images2/2FF747D4-0ED6-4ED4-92FC-F376688E5C3A-53093-00000F705E4BC7F6.jpg");
+    -webkit-mask: url("../../../images/products/food_container/cosmo/cosmo-index.jpg");
+            mask: url("../../../images/products/food_container/cosmo/cosmo-index.jpg");
     /* Text div */
 }
 .foodcontainer_Content .foodcontainer_text{

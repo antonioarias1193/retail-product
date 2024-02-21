@@ -379,10 +379,10 @@ function footer_navbar_html_classlist() {
     </div>
     <!-- Media Social Footer  -->
     <div class="footer_MediaSocial">
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="#"><i class="fa-brands fa-shopify"></i></a>
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.instagram.com/seiji.homeliving?igsh=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@seijihomeliving?_t=8k3Y6R22gD3&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://shp.ee/p110zjq"><i class="fa-brands fa-shopify"></i></a>
+        <a href="https://www.youtube.com/@Seijiware88"><i class="fa-brands fa-youtube"></i></a>
     </div>
     <!-- Copyright Footer -->
     <div class="footer_copyright">
