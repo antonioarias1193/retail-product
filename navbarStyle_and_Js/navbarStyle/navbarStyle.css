@@ -1,5 +1,8 @@
 *{
-    font-family: 'Cambria';
+    /* font-family: 'Cambria'; */
+    /* font-family: 'Cambria'; */
+    /* font-family: sans-serif; */
+    font-family: 'Lucida Sans Regular';
     margin: 0;
     padding: 0;
 }
@@ -299,20 +302,21 @@ li{
             left: 40px;
           }
           /* --------- Button dropdown each Food Container & Beverageware ---------  */
-        .dropdown_spesific_menu{
+          .dropdown_spesific_menu{
             position: relative;
             border: none;
             height: 50px;
             width: 20vw;
             background-color: rgba(113, 136, 241, 0.308);
             font-size: 30px;
-        }
-        /* --------- Spesific produc each categories --------- */
-        .product_category .spesifict_submenu_product {
-          height: 0;
-          overflow: hidden;
+          }
+          /* --------- Spesific produc each categories --------- */
+          .product_category .spesifict_submenu_product {
+            height: 0;
+            /* overflow: hidden; */
             margin-top: 10px;
-          transition: 0.3s;
+            transition: 0.3s;
+            overflow: scroll;
             background-color: rgba(180, 159, 255, 0.29);
         }
         .spesifict_submenu_product a:hover{

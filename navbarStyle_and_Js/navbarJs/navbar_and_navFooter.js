@@ -91,7 +91,7 @@ if (layar_DesktopResponsive < 768) {
 		if (food_container_spesific_dropdown.clientHeight === 0) {
 			// Jika tinggi nol, atur tinggi ke tinggi scroll content
 			food_container_spesific_dropdown.style.height =
-				food_container_spesific_dropdown.scrollHeight + "px";
+				food_container_spesific_dropdown.scrollHeight - "100" + "px";
 			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
 			categories_dropdown.style.height =
 				categories_dropdown_temporary +
