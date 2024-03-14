@@ -154,9 +154,17 @@ function navbar_html_classlist() {
 	const cosmo_foodcontainer = "./cosmo_food_container.html";
 	const luna_foodcontainer = "./luna_food_container.html";
 
+	const ella_foodcontainer = "./ella_food_container.html";
+	const fuji_foodcontainer = "./fuji_food_container.html";
+	const leo_foodcontainer = "./leo_food_container.html";
+
 	const zen_beveragewares = "./zen_beverageware.html";
 	const kylo_beveragewares = "./kylo_beverageware.html";
 	const izzy_beveragewares = "./izzy_beverageware.html";
+
+	const akira_beveragewares = "./akira_beverageware.html";
+	const momo_beveragewares = "./momo_beverageware.html";
+	const shobu_beveragewares = "./shobu_beverageware.html";
 	// navlinks
 
 	let navDiv = document.getElementById("js_navbar_class");
@@ -186,6 +194,9 @@ function navbar_html_classlist() {
                                     <a href="${gemini_foodcontainer}">Gemini</a>
                                     <a href="${cosmo_foodcontainer}">Cosmo</a>
                                     <a href="${luna_foodcontainer}">Luna</a>
+                                    <a href="${ella_foodcontainer}">Ella</a>
+                                    <a href="${fuji_foodcontainer}">Fuji</a>
+                                    <a href="${leo_foodcontainer}">Leo</a>
                                 </ul>
                             </div>
                             <div class="product_category" id="desk_hoverBeverageware">
@@ -198,6 +209,9 @@ function navbar_html_classlist() {
                                         <a href="${zen_beveragewares}">Zen</a>
                                         <a href="${kylo_beveragewares}">Kylo</a>
                                         <a href="${izzy_beveragewares}">Izzy</a>
+                                        <a href="${akira_beveragewares}">Akira</a>
+                                        <a href="${momo_beveragewares}">Momo</a>
+                                        <a href="${shobu_beveragewares}">Shobu</a>
                                     </ul>
                                 </div>
                             </div>
@@ -305,9 +319,18 @@ function footer_navbar_html_classlist() {
 	const cosmo_foodcontainer = "./cosmo_food_container.html";
 	const luna_foodcontainer = "./luna_food_container.html";
 
+	const ella_foodcontainer = "./ella_food_container.html";
+	const fuji_foodcontainer = "./fuji_food_container.html";
+	const leo_foodcontainer = "./leo_food_container.html";
+
 	const zen_beveragewares = "./zen_beverageware.html";
 	const kylo_beveragewares = "./kylo_beverageware.html";
 	const izzy_beveragewares = "./izzy_beverageware.html";
+
+	const akira_beveragewares = "./akira_beverageware.html";
+	const momo_beveragewares = "./momo_beverageware.html";
+	const shobu_beveragewares = "./shobu_beverageware.html";
+
 	// navlinks
 
 	let footer_navdiv = document.getElementById("footer_js_navbar_class");
@@ -353,6 +376,15 @@ function footer_navbar_html_classlist() {
                             <a href="${luna_foodcontainer}">
                                 <div class="footer_spesific_link">Luna</div>
                             </a>
+                            <a href="${ella_foodcontainer}">
+                                <div class="footer_spesific_link">Ella</div>
+                            </a>
+                            <a href="${fuji_foodcontainer}">
+                                <div class="footer_spesific_link">Fuji</div>
+                            </a>
+                            <a href="${leo_foodcontainer}">
+                                <div class="footer_spesific_link">Leo</div>
+                            </a>
                         </ul>
                     </div>
                     <div class="footer_product_category">
@@ -371,6 +403,15 @@ function footer_navbar_html_classlist() {
                             </a>
                             <a href="${izzy_beveragewares}">
                                 <div class="footer_spesific_link">Izzy</div>
+                            </a>
+                            <a href="${akira_beveragewares}">
+                                <div class="footer_spesific_link">Akira</div>
+                            </a>
+                            <a href="${momo_beveragewares}">
+                                <div class="footer_spesific_link">Momo</div>
+                            </a>
+                            <a href="${shobu_beveragewares}">
+                                <div class="footer_spesific_link">Shobu</div>
                             </a>
                         </ul>
                     </div>
