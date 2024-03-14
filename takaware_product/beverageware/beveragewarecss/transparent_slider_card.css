@@ -110,12 +110,12 @@
     }
     
     .prev {
-        display: none;
+        /* display: none; */
         left: 0;
     }
     
     .next {
-        display: none;
+        /* display: none; */
         right: 0;
     }
 }

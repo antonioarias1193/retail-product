@@ -13,10 +13,10 @@
     font-size: 1.2rem;
 }
 .product_description_afterparallax .images_container{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .product_description_afterparallax .images{
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 100%;    
 }
@@ -47,7 +47,7 @@
     .product_description_afterparallax .product_container_right .images{
         height: 150%;
         width: 100%;
-        background-position-x: -50px;
+        /* background-position-x: -250px; */
     }
 
     .product_description_afterparallax .product_text_container{
@@ -97,15 +97,15 @@
             gap: 40px;
         }
         .product_description_afterparallax .images_container{
-            width: 70%;
-            height: 50vw;
+            width: 80%; 
+            height: 100vw;
         }
         .product_description_afterparallax .product_container_left,
         .product_description_afterparallax .product_container_right{
             flex-direction: column;
         }
         .product_description_afterparallax .images{
-            background-position-y: -150px!important;
+            /* background-position-y: -150px!important; */
         }
     }
     
