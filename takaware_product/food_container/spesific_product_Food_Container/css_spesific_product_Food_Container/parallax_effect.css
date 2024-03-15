@@ -36,7 +36,7 @@ body {
     transition: transform 0.2s ease;
     opacity: 0;
     /* Parallax effect */
-    color: black;
+    /* color: black; */
 }
 
 /* Desktop Responsive */
