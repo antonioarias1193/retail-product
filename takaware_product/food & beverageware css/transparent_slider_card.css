@@ -23,7 +23,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        flex: 0 0 34.33%;
+        flex: 0 0 33.93%;
         /* Membuat setiap card memiliki lebar 33.33% dari container */
         box-sizing: border-box;
         padding: 10px;
@@ -66,7 +66,8 @@
         border: 2px solid rgb(21, 9, 90);;
         border-radius: 20px;
         transition: 0.2s;
-        padding-inline: 20px;
+        width: 100px;
+        /* padding-inline: 20px; */
     }
     
     .transparent_slider .link_button_spesific .link_button:hover{
@@ -94,6 +95,14 @@
         flex: 1 0 calc(22.22% - 10px); 
         box-sizing: border-box; /* Menyesuaikan box-sizing untuk mengakomodasi padding dan border */
     } 
+
+     .bordered_product {
+        display: flex; 
+        flex-direction: column; 
+        border: 2px solid rgb(21, 9, 90); 
+        border-radius: 20px; 
+        padding-bottom: 50px;
+     }
     /* ISI */
     
     .slider-btn {
@@ -124,7 +133,7 @@
     .transparent_slider {
         overflow: hidden;
         position: relative;
-        width: 100%;
+        width: 80%;
         max-width: 90vw;
         /* Sesuaikan dengan lebar yang Anda inginkan */
         margin: 0 auto;
@@ -145,7 +154,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        flex: 0 0 110%;
+        flex: 0 0 100%;
         /* Membuat setiap card memiliki lebar 33.33% dari container */
         box-sizing: border-box;
         padding: 10px;
@@ -161,6 +170,14 @@
         overflow: hidden;
         border-radius: 8px;
     }
+
+    .bordered_product {
+        display: flex; 
+        flex-direction: column; 
+        border: 2px solid rgb(21, 9, 90); 
+        border-radius: 20px; 
+        padding-bottom: 50px;
+     }
     /* ISI */
     .transparent_slider .title_card{
         margin-top: 30px;
