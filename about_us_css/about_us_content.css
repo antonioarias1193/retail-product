@@ -27,6 +27,9 @@ body{
 
 
 @media screen and (min-width:769px) {
+    .about_us_Content{
+        background-position-y: -500px;
+    }
     .about_us_Content h1{
         font-size: 4rem;
     }
@@ -36,6 +39,7 @@ body{
 }
 
 @media screen and (max-width:768px) {
+    
     .about_us_Content h1{
         font-size: 3rem;
     }
@@ -45,6 +49,9 @@ body{
 }
 
 @media screen and (max-width:450px) {
+    .about_us_Content{
+        background-position-y: 0px;
+    }
     .about_us_text{
         justify-content: center;
     }
