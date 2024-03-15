@@ -38,6 +38,9 @@ body{
     .beverageware_text{
         margin-left: 100px;
     }
+    .beverageware_Content{
+        background-position-y: -500px;
+    }
 }
 
 @media screen and (max-width:768px) {
