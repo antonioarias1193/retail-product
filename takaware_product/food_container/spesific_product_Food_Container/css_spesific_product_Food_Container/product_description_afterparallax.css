@@ -24,7 +24,7 @@
 @media (min-width:950px){
     /* Top Container */
     .product_description_afterparallax{
-        margin-block: 200px;
+        margin-block: 50px;
         display: flex;
         flex-direction: column;
         gap: 100px;
@@ -41,11 +41,16 @@
     
     /* Top Container */
     .product_description_afterparallax .images_container{
-        height: 400px;
-        width: 400px;
+        height: 500px;
+        width: 40vw;
     }
     .product_description_afterparallax .product_container_right .images{
-        height: 150%;
+        height: 100%;
+        width: 100%;
+        /* background-position-x: -250px; */
+    }
+    .product_description_afterparallax .product_container_left .images{
+        height: 100%;
         width: 100%;
         /* background-position-x: -250px; */
     }
