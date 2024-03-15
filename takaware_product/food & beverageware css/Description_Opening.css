@@ -1,0 +1,8 @@
+.Description_Opening{
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+    padding-bottom: 180px;
+    padding-inline: 150px;
+    gap: 170px;
+}
