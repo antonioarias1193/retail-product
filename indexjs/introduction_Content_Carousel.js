@@ -1,3 +1,6 @@
+let baseUrl = window.location.origin;
+	console.log("🚀 ~ navbar_html_classlist ~ baseUrl:", baseUrl);
+
 // introduction Carousel Content Slder
 let list = document.querySelector(".slider .list");
 let items = document.querySelectorAll(".slider .list .item");
