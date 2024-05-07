@@ -18,6 +18,10 @@ li{
 }
 /* ===========Responsive darurat=========== */
 @media screen and (min-width: 768px) and (max-width: 850px){
+  .product_category{
+    height: 30px;
+    width: 300px!important;
+  }
   .nav_menu{
     gap: 20px!important;
     /* background-color: red; */
@@ -155,6 +159,7 @@ li{
 /* =============================== Spesifict Product Dropdown 3 ======================= */
 .product_category{
   height: 30px;
+  width: auto;
 }
 .product_category_links_dropdown{
   display: flex;
@@ -162,21 +167,23 @@ li{
   /* background-color: antiquewhite; */
 }
 .product_category .spesifict_submenu_product{
-  display: block;
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  position: relative;
   top: 0px;
   margin-left: 150px;
-  left: 500px;
+  left: 100vw;
   /* opacity: 0; */
   transition: 0.3s ease-in-out;
 }
 
 .product_category:hover .spesifict_submenu_product{
   display: flex;
-  flex-direction: column;
   opacity: 1;
   background-color: rgb(255, 255, 255);
-  left: 30px;
+  /* right:100px; */
+  left: 0px;
+  top: -45px;
 }
 
 .product_category .spesifict_submenu_product a{
