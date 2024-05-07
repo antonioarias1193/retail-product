@@ -146,38 +146,38 @@ function navbar_html_classlist() {
 	// let githubRepo = "retail-product2/";
 	// boleh dihapus kalau urlnya berbeda
 
-	let baseUrl = window.location.origin + "/";
+	// let baseUrl = window.location.origin + "/";
 
 	// boleh dihapus kalau urlnya berbeda
 	// baseUrl = baseUrl + githubRepo;
 	// boleh dihapus kalau urlnya berbeda
 	// navlinks
 
-	const takaware_Header = baseUrl + "index.html";
+	const takaware_Header = "./index.html";
 
-	const about_menu = baseUrl + "about.html";
+	const about_menu = "./about.html";
 
-	const foodContainer_categories = baseUrl + "food_container.html";
-	const beveragewares_categories = baseUrl + "beverageware.html";
+	const foodContainer_categories = "./food_container.html";
+	const beveragewares_categories = "./beverageware.html";
 
-	const jade_foodcontainer = baseUrl + "jade_food_container.html";
-	const cleo_foodcontainer = baseUrl + "cleo_food_container.html";
-	const chloe_foodcontainer = baseUrl + "chloe_food_container.html";
-	const gemini_foodcontainer = baseUrl + "gemini_food_container.html";
-	const cosmo_foodcontainer = baseUrl + "cosmo_food_container.html";
-	const luna_foodcontainer = baseUrl + "luna_food_container.html";
+	const jade_foodcontainer = "./jade_food_container.html";
+	const cleo_foodcontainer = "./cleo_food_container.html";
+	const chloe_foodcontainer = "./chloe_food_container.html";
+	const gemini_foodcontainer = "./gemini_food_container.html";
+	const cosmo_foodcontainer = "./cosmo_food_container.html";
+	const luna_foodcontainer = "./luna_food_container.html";
 
-	const ella_foodcontainer = baseUrl + "ella_food_container.html";
-	const fuji_foodcontainer = baseUrl + "fuji_food_container.html";
-	const leo_foodcontainer = baseUrl + "leo_food_container.html";
+	const ella_foodcontainer = "./ella_food_container.html";
+	const fuji_foodcontainer = "./fuji_food_container.html";
+	const leo_foodcontainer = "./leo_food_container.html";
 
-	const zen_beveragewares = baseUrl + "zen_beverageware.html";
-	const kylo_beveragewares = baseUrl + "kylo_beverageware.html";
-	const izzy_beveragewares = baseUrl + "izzy_beverageware.html";
+	const zen_beveragewares = "./zen_beverageware.html";
+	const kylo_beveragewares = "./kylo_beverageware.html";
+	const izzy_beveragewares = "./izzy_beverageware.html";
 
-	const akira_beveragewares = baseUrl + "akira_beverageware.html";
-	const momo_beveragewares = baseUrl + "momo_beverageware.html";
-	const shobu_beveragewares = baseUrl + "shobu_beverageware.html";
+	const akira_beveragewares = "./akira_beverageware.html";
+	const momo_beveragewares = "./momo_beverageware.html";
+	const shobu_beveragewares = "./shobu_beverageware.html";
 	// navlinks
 
 	let navDiv = document.getElementById("js_navbar_class");
@@ -328,52 +328,38 @@ function footer_navbar_html_classlist() {
 	// let githubRepo = "retail-product2/";
 	// boleh dihapus kalau urlnya berbeda
 
-	let baseUrl = window.location.origin + "/";
+	// let baseUrl = window.location.origin + "/";
 
 	// boleh dihapus kalau urlnya berbeda
 	// baseUrl = baseUrl + githubRepo;
 	// boleh dihapus kalau urlnya berbeda
 
 	// navlinks
-	const takaware_Header = baseUrl + "index.html";
+	const takaware_Header = "index.html";
 
-	const about_menu = baseUrl + "about.html";
+	const about_menu = "about.html";
 
-	const foodContainer_categories = baseUrl + "food_container.html";
-	const beveragewares_categories = baseUrl + "beverageware.html";
+	const foodContainer_categories = "food_container.html";
+	const beveragewares_categories = "beverageware.html";
 
-	const jade_foodcontainer =
-		baseUrl + "all_product_pages/jade_food_container.html";
-	const cleo_foodcontainer =
-		baseUrl + "all_product_pages/cleo_food_container.html";
-	const chloe_foodcontainer =
-		baseUrl + "all_product_pages/chloe_food_container.html";
-	const gemini_foodcontainer =
-		baseUrl + "all_product_pages/gemini_food_container.html";
-	const cosmo_foodcontainer =
-		baseUrl + "all_product_pages/cosmo_food_container.html";
-	const luna_foodcontainer =
-		baseUrl + "all_product_pages/luna_food_container.html";
+	const jade_foodcontainer = "jade_food_container.html";
+	const cleo_foodcontainer = "cleo_food_container.html";
+	const chloe_foodcontainer = "chloe_food_container.html";
+	const gemini_foodcontainer = "gemini_food_container.html";
+	const cosmo_foodcontainer = "cosmo_food_container.html";
+	const luna_foodcontainer = "luna_food_container.html";
 
-	const ella_foodcontainer =
-		baseUrl + "all_product_pages/ella_food_container.html";
-	const fuji_foodcontainer =
-		baseUrl + "all_product_pages/fuji_food_container.html";
-	const leo_foodcontainer =
-		baseUrl + "all_product_pages/leo_food_container.html";
+	const ella_foodcontainer = "ella_food_container.html";
+	const fuji_foodcontainer = "fuji_food_container.html";
+	const leo_foodcontainer = "leo_food_container.html";
 
-	const zen_beveragewares = baseUrl + "all_product_pages/zen_beverageware.html";
-	const kylo_beveragewares =
-		baseUrl + "all_product_pages/kylo_beverageware.html";
-	const izzy_beveragewares =
-		baseUrl + "all_product_pages/izzy_beverageware.html";
+	const zen_beveragewares = "zen_beverageware.html";
+	const kylo_beveragewares = "kylo_beverageware.html";
+	const izzy_beveragewares = "izzy_beverageware.html";
 
-	const akira_beveragewares =
-		baseUrl + "all_product_pages/akira_beverageware.html";
-	const momo_beveragewares =
-		baseUrl + "all_product_pages/momo_beverageware.html";
-	const shobu_beveragewares =
-		baseUrl + "all_product_pages/shobu_beverageware.html";
+	const akira_beveragewares = "akira_beverageware.html";
+	const momo_beveragewares = "momo_beverageware.html";
+	const shobu_beveragewares = "shobu_beverageware.html";
 
 	// navlinks
 
