@@ -1,0 +1,155 @@
+*{
+    /* font-family: 'Cambria'; */
+    /* font-family: 'Cambria'; */
+    /* font-family: sans-serif; */
+    font-family: 'Lucida Sans Regular';
+    margin: 0;
+    padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* pakai body width 100% biar bisa flex space between */
+body {
+  width: 100%;
+}
+li{
+    list-style: none;
+  }
+
+  /* =============================== Desktop Responsive Mode ======================= */
+  @media screen and (min-width: 768px) {
+    .navbar_header{
+      background-color: transparent;
+      position: fixed;
+      width: 100%;
+      transition: background-color 0.3s ease-in-out;
+      z-index: 2;
+    }
+
+  /* On Hover header */
+  .navbar_header:hover{
+    background-color: white;
+    border-style: #1a1a1a;  
+  }
+  
+  .navbar_header:hover .nav_branding,
+  .navbar_header:hover .nav_item a,
+  .navbar_header:hover .dropdown .dropbtn{
+    color: black;
+  }
+  /* On Hover header */
+
+  .nav_item a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav_item .nav_link{
+    font-size: 1.5rem;
+  }
+  
+  .navbar_container{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 24px;
+  }
+  
+  .nav_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+  
+  .nav_branding{
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+  
+  }
+  .dropdown .dropbtn {
+    color: white;
+    font-size: 1.5rem;
+    border: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    cursor: pointer;
+  }
+
+  /* =============================== Navbar Menu 2 ======================= */
+
+
+  .dropdown-content {
+    height: auto;
+    /* overflow: hidden; */
+    position: absolute;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    top: 70px;
+    /* left: 0px; */
+    right: 20vw;
+    width: 20%;
+    background-color: transparent;
+    transition: background-color 0.4s;
+  }
+  .dropdown-content .category_links {
+    /* flex: 0.3; */
+    color: black;
+    padding: 12px 0px;
+  }
+  .dropdown_spesific_menu{
+    /* flex-basis: 70px; */
+    border: none;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .navbar_header:hover .dropdown-content{
+    /* height: max-content; */
+
+    background-color: white;
+    border-top: 2px solid rgba(128, 128, 128, 0.353);
+  }
+  .product_category_links_dropdown{
+    display: flex;
+  }
+  
+  /* =============================== Navbar Menu 2 ======================= */
+  
+  /* =============================== Spesifict Product Dropdown 3 ======================= */
+  .product_category{
+    height: 30px;
+  }
+  .product_category .spesifict_submenu_product{
+    display: block;
+    position: absolute;
+    top: 0px;
+    margin-left: 150px;
+    left: 500px;
+    /* opacity: 0; */
+    transition: 0.3s ease-in-out;
+  }
+  
+  .product_category:hover .spesifict_submenu_product{
+    display: block;
+    opacity: 1;
+    background-color: rgb(255, 255, 255);
+    left: 30px;
+  }
+
+  .product_category .spesifict_submenu_product a{
+    color: black;
+    padding: 12px 10px;
+    font-size: 1.3rem;
+   }
+   .product_category .spesifict_submenu_product a:hover{
+    /* display: flex; */
+    background-color: rgba(180, 159, 255, 0.29);
+   }
+  /* =============================== Spesifict Product Dropdown 3 ======================= */
+  
+  }
+  /* =============================== Desktop Responsive Mode ======================= */
