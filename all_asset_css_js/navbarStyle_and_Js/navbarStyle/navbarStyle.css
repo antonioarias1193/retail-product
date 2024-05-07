@@ -17,11 +17,13 @@ li{
   list-style: none;
 }
 /* ===========Responsive darurat=========== */
-@media screen and (min-width: 768px) and (max-width: 850px){
+@media screen and (min-width: 768px) and (max-width: 1050px){
   .product_category{
     height: 30px;
     width: 300px!important;
   }
+}
+@media screen and (min-width: 768px) and (max-width: 850px){
   .nav_menu{
     gap: 20px!important;
     /* background-color: red; */
