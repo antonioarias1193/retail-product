@@ -174,9 +174,9 @@ li{
   position: relative;
   top: 0px;
   margin-left: 150px;
-  left: 100vw;
-  /* opacity: 0; */
-  transition: 0.3s ease-in-out;
+  left: 30vw;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
 }
 
 .product_category:hover .spesifict_submenu_product{
