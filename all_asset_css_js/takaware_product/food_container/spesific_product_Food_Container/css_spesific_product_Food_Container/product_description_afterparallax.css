@@ -24,11 +24,10 @@
 @media (min-width:950px){
     /* Top Container */
     .product_description_afterparallax{
-        margin-block: 50px;
+        margin-block: 100px;
         display: flex;
         flex-direction: column;
-        gap: 100px;
-        
+        gap: 200px;
     }
     .product_description_afterparallax .product_container_left .line_center{
         position: absolute;
@@ -36,13 +35,14 @@
         height: 200px;
         background-color: rgba(128, 128, 128, 0.563);
         left: 50%;
-        transform: translateY(150%);
+        transform: translateY(190%);
     }
     
     /* Top Container */
     .product_description_afterparallax .images_container{
         height: 500px;
         width: 40vw;
+        
     }
     .product_description_afterparallax .product_container_right .images{
         height: 100%;
@@ -56,11 +56,12 @@
     }
 
     .product_description_afterparallax .product_text_container{
-        width: 40%;
+        width: 30%;
     }
         /* ====== Container left ====== */
         .product_description_afterparallax .product_container_left{
             flex-direction: row;
+            /* background-color: aqua; */
         }
         .product_description_afterparallax .product_container_left .product_text_container{
             transform: translateX(40%);
@@ -68,11 +69,22 @@
         /* ====== Container right ====== */
         .product_description_afterparallax .product_container_right{
             flex-direction: row-reverse;
+            padding-left: 9vw;
         }
         .product_description_afterparallax .product_container_right .product_text_container{
-            transform: translateX(-40%);
+            transform: translateX(-70%);
         }
         
+
+            .product_container_left .images_container{
+                display: flex;
+                justify-content: end;
+                /* background-color: rgb(62, 227, 227); */
+                width: 50%;
+            }
+            .product_container_left .images_container .images{
+               width: 80%;  
+         }
         
     }
 
