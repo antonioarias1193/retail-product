@@ -2,7 +2,8 @@ body{
     width: 100%;
 }
 .about_us_Content{
-    background-image: url("../../images/Product/lifestyle/Lifestyle-22.jpg");
+    background-image: url("../../images/Product/lifestyle/Lifestyle-64.jpg");
+    /* background-position-y: -900px; */
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
@@ -30,7 +31,7 @@ body{
 
 @media screen and (min-width:769px) {
     .about_us_Content{
-        background-position-y: -500px;
+        /* background-position-x: -500px; */
     }
     .about_us_Content h1{
         font-size: 4rem;
@@ -38,12 +39,16 @@ body{
     .about_us_text{
         margin-left: 10px;
     }
-}
+} 
 
 @media screen and (max-width:768px) {
-    
+    .about_us_Content{
+        background-position-x: -300px;
+
+    }
     .about_us_Content h1{
         font-size: 3rem;
+
     }
     .about_us_text{
         justify-content: center;
@@ -53,6 +58,8 @@ body{
 @media screen and (max-width:450px) {
     .about_us_Content{
         background-position-y: 0px;
+        background-position-x: -350px;
+
     }
     .about_us_text{
         justify-content: center;

@@ -1,3 +1,11 @@
+:root{
+  --ungu-terang: #b2a4ff;
+  --biru-angkasa: #c0dbea;
+  --oren-terang: #ffdeb4;
+  --kuning-terang: #fdf7c3;
+  --abu-abu: #aec2b6;
+}
+
 *{
   /* font-family: 'Cambria'; */
   /* font-family: 'Cambria'; */
@@ -43,7 +51,7 @@ li{
 
 /* On Hover header */
 .navbar_header:hover{
-  background-color: white;
+  background-color: var(--abu-abu);
   border-style: #1a1a1a;  
 }
 
@@ -126,7 +134,7 @@ li{
   /* height: max-content; */
   opacity: 1;
 
-  background-color: white;
+  background-color: var(--abu-abu);
   border-top: 2px solid rgba(128, 128, 128, 0.353);
 }
 .product_category_links_dropdown{
@@ -183,7 +191,8 @@ li{
 .product_category:hover .spesifict_submenu_product{
   display: flex;
   opacity: 1;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
+  background-color: var(--abu-abu);
   /* right:100px; */
   left: 0px;
   top: -45px;
@@ -235,11 +244,11 @@ li{
     }
     /* On Active header */
     .navbar_header.active{
-      background-color: white;
+      background-color: var(--abu-abu);
     }
     /* On Hover header */
     .navbar_header:hover{
-      background-color: white;
+      background-color: var(--abu-abu);
       border-style: #1a1a1a;  
     }
     /* -============ Navbar Header =========- */
@@ -308,7 +317,7 @@ li{
         position: absolute;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--abu-abu);
         width: 100%;
         text-align: center;
         transition: 0.3s;

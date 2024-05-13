@@ -1,0 +1,45 @@
+.contact_introduction {
+    margin-bottom: 40vh;
+}
+@media screen and (min-width:769px){
+    .contact_intro_image{
+        display: flex;
+        justify-content: end;
+    }
+    .contact_intro_image .image{
+        width: 60vw;
+        align-self: flex-end;
+        justify-self: end;
+        
+    }
+    
+    .contact_introduction .intro_teks{
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: 10vw;
+
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width:769px){
+    .contact_intro_image{
+        display: flex;
+        justify-content: end;
+    }
+    .contact_intro_image .image{
+        width: 40vw;
+        align-self: flex-end;
+        justify-self: end;
+        
+    }
+    
+    .contact_introduction .intro_teks{
+        display: block;
+        position: absolute;
+        top: 90px;
+        left: 10vw;
+
+        font-size: calc(2rem * 20vw) ;
+    }
+}

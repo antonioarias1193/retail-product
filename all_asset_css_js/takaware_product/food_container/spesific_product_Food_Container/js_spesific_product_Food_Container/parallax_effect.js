@@ -44,13 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 	// Contoh penggunaan
-	const myArray = [
-		"rgb(74, 19, 213)",
-		"rgb(11, 223, 50)",
-		"rgb(235, 46, 96)",
-		"rgb(9, 197, 169)",
-		"rgb(254, 150, 4)",
-	];
+	const myArray = ["#b2a4ff", "#c0dbea", "#ffdeb4", "#fdf7c3", "#aec2b6"];
 	const randomElement = randomElementFromArray(myArray);
 	console.log(randomElement); // Output: satu elemen acak dari array
 

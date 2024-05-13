@@ -157,6 +157,8 @@ function navbar_html_classlist() {
 
 	const about_menu = "./about.html";
 
+	const contact_menu = "./contact.html";
+
 	const foodContainer_categories = "./food_container.html";
 	const beveragewares_categories = "./beverageware.html";
 
@@ -174,6 +176,7 @@ function navbar_html_classlist() {
 	const zen_beveragewares = "./zen_beverageware.html";
 	const kylo_beveragewares = "./kylo_beverageware.html";
 	const izzy_beveragewares = "./izzy_beverageware.html";
+	const izzytall_beveragewares = "./izzytall_beverageware.html";
 
 	const akira_beveragewares = "./akira_beverageware.html";
 	const momo_beveragewares = "./momo_beverageware.html";
@@ -183,7 +186,7 @@ function navbar_html_classlist() {
 	let navDiv = document.getElementById("js_navbar_class");
 	navDiv.innerHTML = `
 	<nav class="navbar_container">
-            <a href="${takaware_Header}" class="nav_branding">TAKAWARE</a>
+            <a href="${takaware_Header}" class="nav_branding"> <img src="./images/Product/logo_Takaware.png" width="200px" alt="" /></a>
         
             <ul class="nav_menu">
                 <li class="nav_item">
@@ -200,7 +203,7 @@ function navbar_html_classlist() {
                         <div class="dropdown-content" id="toggle_Dropdown_Navbar_Menu">
                             <div class="product_category" id="desk_hoverFoodContainer">
                                 <div class="product_category_links_dropdown" >
-                                <a href="${foodContainer_categories}" class="category_links">Food Container</a>
+                                <a href="#" class="category_links">Food Container</a>
                                 <button onclick="food_container_categoriesDropdown()" class="dropdown_spesific_menu"><i class="dropdown_icon fa fa-caret-down"></i></button>
                                 </div>
                                 <ul id="food_container_dropdown" class="spesifict_submenu_product">
@@ -217,7 +220,7 @@ function navbar_html_classlist() {
                             </div>
                             <div class="product_category" id="desk_hoverBeverageware">
                                 <div class="product_category_links_dropdown">
-                                    <a class="category_links" href="${beveragewares_categories}">Beverageware</a>
+                                    <a class="category_links" href="#">Beverageware</a>
                                     <button onclick="beverageware_categoriesDropdown()" class="dropdown_spesific_menu"><i class="dropdown_icon fa fa-caret-down"></i></button>
                                 </div>
                                 <div>
@@ -225,6 +228,7 @@ function navbar_html_classlist() {
                                         <a href="${zen_beveragewares}">Zen</a>
                                         <a href="${kylo_beveragewares}">Kylo</a>
                                         <a href="${izzy_beveragewares}">Izzy</a>
+                                        <a href="${izzytall_beveragewares}">Izzy Tall</a>
                                         <a href="${akira_beveragewares}">Akira</a>
                                         <a href="${momo_beveragewares}">Momo</a>
                                         <a href="${shobu_beveragewares}">Shobu</a>
@@ -235,7 +239,7 @@ function navbar_html_classlist() {
                     </div>
                 </li>
 				<li class="nav_item">
-                    <a href="${about_menu}" class="nav_link">Contact</a>
+                    <a href="${contact_menu}" class="nav_link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -339,6 +343,8 @@ function footer_navbar_html_classlist() {
 
 	const about_menu = "about.html";
 
+	const contact_menu = "./contact.html";
+
 	const foodContainer_categories = "food_container.html";
 	const beveragewares_categories = "beverageware.html";
 
@@ -356,6 +362,7 @@ function footer_navbar_html_classlist() {
 	const zen_beveragewares = "zen_beverageware.html";
 	const kylo_beveragewares = "kylo_beverageware.html";
 	const izzy_beveragewares = "izzy_beverageware.html";
+	const izzytall_beveragewares = "izzytall_beverageware.html";
 
 	const akira_beveragewares = "akira_beverageware.html";
 	const momo_beveragewares = "momo_beverageware.html";
@@ -373,6 +380,11 @@ function footer_navbar_html_classlist() {
                     About
                 </div>
             </a>
+			<a href="${contact_menu}" class="navFooter_Links">
+                <div class="About">
+                    Contact
+                </div>
+            </a>
             <button class="navFooter_Dropdown" onclick="dropdown_footer_Function()">
 				<div class="Product">
 					Product
@@ -382,7 +394,7 @@ function footer_navbar_html_classlist() {
                 <div class="dropdown_footer_content" id="toggle_Dropdown_footer">
                     <div class="footer_product_category">
 						<div class="footer_container_foodcontainer_dropdown">
-							<a href="${foodContainer_categories}">
+							<a href="#">
 								<div class="footer_category_links">Food Container</div>
 							</a>
 							<div onclick="footer_food_container_categoriesDropdown()" class="footer_spesific_dropdown_button"><i class="fa fa-caret-down"></i></div>
@@ -419,7 +431,7 @@ function footer_navbar_html_classlist() {
                     </div>
                     <div class="footer_product_category">
 						<div class="footer_container_foodcontainer_dropdown">
-							<a href="${beveragewares_categories}">
+							<a href="#">
 								<div class="footer_category_links">Beverageware</div>
 							</a>
 							<div onclick="footer_beverageware_categoriesDropdown()" class="footer_spesific_dropdown_button"><i class="fa fa-caret-down"></i></div>
@@ -434,6 +446,9 @@ function footer_navbar_html_classlist() {
                             <a href="${izzy_beveragewares}">
                                 <div class="footer_spesific_link">Izzy</div>
                             </a>
+                            <a href="${izzytall_beveragewares}">
+                                <div class="footer_spesific_link">Izzy Tall</div>
+                            </a>
                             <a href="${akira_beveragewares}">
                                 <div class="footer_spesific_link">Akira</div>
                             </a>
@@ -446,6 +461,7 @@ function footer_navbar_html_classlist() {
                         </ul>
                     </div>
                 </div>
+            </a>
         </div>
     </div>
     <!-- Media Social Footer  -->
