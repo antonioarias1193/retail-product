@@ -186,7 +186,7 @@ function navbar_html_classlist() {
 	let navDiv = document.getElementById("js_navbar_class");
 	navDiv.innerHTML = `
 	<nav class="navbar_container">
-            <a href="${takaware_Header}" class="nav_branding">TAKAWARE</a>
+            <a href="${takaware_Header}" class="nav_branding"> <img src="./images/Product/logo_Takaware.png" width="200px" alt="" /></a>
         
             <ul class="nav_menu">
                 <li class="nav_item">
@@ -203,7 +203,7 @@ function navbar_html_classlist() {
                         <div class="dropdown-content" id="toggle_Dropdown_Navbar_Menu">
                             <div class="product_category" id="desk_hoverFoodContainer">
                                 <div class="product_category_links_dropdown" >
-                                <a href="${foodContainer_categories}" class="category_links">Food Container</a>
+                                <a href="#" class="category_links">Food Container</a>
                                 <button onclick="food_container_categoriesDropdown()" class="dropdown_spesific_menu"><i class="dropdown_icon fa fa-caret-down"></i></button>
                                 </div>
                                 <ul id="food_container_dropdown" class="spesifict_submenu_product">
@@ -220,7 +220,7 @@ function navbar_html_classlist() {
                             </div>
                             <div class="product_category" id="desk_hoverBeverageware">
                                 <div class="product_category_links_dropdown">
-                                    <a class="category_links" href="${beveragewares_categories}">Beverageware</a>
+                                    <a class="category_links" href="#">Beverageware</a>
                                     <button onclick="beverageware_categoriesDropdown()" class="dropdown_spesific_menu"><i class="dropdown_icon fa fa-caret-down"></i></button>
                                 </div>
                                 <div>
@@ -394,7 +394,7 @@ function footer_navbar_html_classlist() {
                 <div class="dropdown_footer_content" id="toggle_Dropdown_footer">
                     <div class="footer_product_category">
 						<div class="footer_container_foodcontainer_dropdown">
-							<a href="${foodContainer_categories}">
+							<a href="#">
 								<div class="footer_category_links">Food Container</div>
 							</a>
 							<div onclick="footer_food_container_categoriesDropdown()" class="footer_spesific_dropdown_button"><i class="fa fa-caret-down"></i></div>
@@ -431,7 +431,7 @@ function footer_navbar_html_classlist() {
                     </div>
                     <div class="footer_product_category">
 						<div class="footer_container_foodcontainer_dropdown">
-							<a href="${beveragewares_categories}">
+							<a href="#">
 								<div class="footer_category_links">Beverageware</div>
 							</a>
 							<div onclick="footer_beverageware_categoriesDropdown()" class="footer_spesific_dropdown_button"><i class="fa fa-caret-down"></i></div>

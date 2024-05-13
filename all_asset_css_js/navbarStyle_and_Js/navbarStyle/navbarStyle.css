@@ -244,11 +244,11 @@ li{
     }
     /* On Active header */
     .navbar_header.active{
-      background-color: white;
+      background-color: var(--abu-abu);
     }
     /* On Hover header */
     .navbar_header:hover{
-      background-color: white;
+      background-color: var(--abu-abu);
       border-style: #1a1a1a;  
     }
     /* -============ Navbar Header =========- */
@@ -317,7 +317,7 @@ li{
         position: absolute;
         top: 70px;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--abu-abu);
         width: 100%;
         text-align: center;
         transition: 0.3s;
