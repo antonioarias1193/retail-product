@@ -157,6 +157,8 @@ function navbar_html_classlist() {
 
 	const about_menu = "./about.html";
 
+	const contact_menu = "./contact.html";
+
 	const foodContainer_categories = "./food_container.html";
 	const beveragewares_categories = "./beverageware.html";
 
@@ -174,6 +176,7 @@ function navbar_html_classlist() {
 	const zen_beveragewares = "./zen_beverageware.html";
 	const kylo_beveragewares = "./kylo_beverageware.html";
 	const izzy_beveragewares = "./izzy_beverageware.html";
+	const izzytall_beveragewares = "./izzytall_beverageware.html";
 
 	const akira_beveragewares = "./akira_beverageware.html";
 	const momo_beveragewares = "./momo_beverageware.html";
@@ -225,6 +228,7 @@ function navbar_html_classlist() {
                                         <a href="${zen_beveragewares}">Zen</a>
                                         <a href="${kylo_beveragewares}">Kylo</a>
                                         <a href="${izzy_beveragewares}">Izzy</a>
+                                        <a href="${izzytall_beveragewares}">Izzy Tall</a>
                                         <a href="${akira_beveragewares}">Akira</a>
                                         <a href="${momo_beveragewares}">Momo</a>
                                         <a href="${shobu_beveragewares}">Shobu</a>
@@ -235,7 +239,7 @@ function navbar_html_classlist() {
                     </div>
                 </li>
 				<li class="nav_item">
-                    <a href="${about_menu}" class="nav_link">Contact</a>
+                    <a href="${contact_menu}" class="nav_link">Contact</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -339,6 +343,8 @@ function footer_navbar_html_classlist() {
 
 	const about_menu = "about.html";
 
+	const contact_menu = "./contact.html";
+
 	const foodContainer_categories = "food_container.html";
 	const beveragewares_categories = "beverageware.html";
 
@@ -356,6 +362,7 @@ function footer_navbar_html_classlist() {
 	const zen_beveragewares = "zen_beverageware.html";
 	const kylo_beveragewares = "kylo_beverageware.html";
 	const izzy_beveragewares = "izzy_beverageware.html";
+	const izzytall_beveragewares = "izzytall_beverageware.html";
 
 	const akira_beveragewares = "akira_beverageware.html";
 	const momo_beveragewares = "momo_beverageware.html";
@@ -371,6 +378,11 @@ function footer_navbar_html_classlist() {
             <a href="${about_menu}" class="navFooter_Links">
                 <div class="About">
                     About
+                </div>
+            </a>
+			<a href="${contact_menu}" class="navFooter_Links">
+                <div class="About">
+                    Contact
                 </div>
             </a>
             <button class="navFooter_Dropdown" onclick="dropdown_footer_Function()">
@@ -434,6 +446,9 @@ function footer_navbar_html_classlist() {
                             <a href="${izzy_beveragewares}">
                                 <div class="footer_spesific_link">Izzy</div>
                             </a>
+                            <a href="${izzytall_beveragewares}">
+                                <div class="footer_spesific_link">Izzy Tall</div>
+                            </a>
                             <a href="${akira_beveragewares}">
                                 <div class="footer_spesific_link">Akira</div>
                             </a>
@@ -446,6 +461,7 @@ function footer_navbar_html_classlist() {
                         </ul>
                     </div>
                 </div>
+            </a>
         </div>
     </div>
     <!-- Media Social Footer  -->

@@ -22,9 +22,15 @@
 }
 
 @media (min-width:950px){
+
+    .product_text_container_description{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
     /* Top Container */
     .product_description_afterparallax{
-        margin-block: 100px;
+        margin-block: 400px;
         display: flex;
         flex-direction: column;
         gap: 200px;

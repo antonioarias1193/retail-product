@@ -23,7 +23,7 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        flex: 0 0 33.93%;
+        flex: 0 0 25.53%;
         /* Membuat setiap card memiliki lebar 33.33% dari container */
         box-sizing: border-box;
         padding: 10px;
@@ -90,9 +90,9 @@
         text-align: left;
         position: relative;
         /* Maksimal lebar per kolom */
-        max-width: calc(22.22% - -200px); 
+        max-width: calc(12.22%  -200px); 
         /* Maksimal 3 kolom, mengurangkan margin jika ada */
-        flex: 1 0 calc(22.22% - 10px); 
+        flex: 1 0 calc(12.22% - 10px); 
         box-sizing: border-box; /* Menyesuaikan box-sizing untuk mengakomodasi padding dan border */
     } 
 

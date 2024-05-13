@@ -15,7 +15,7 @@ function nextSlide() {
 		showSlide(currentIndex);
 	} else if (currentWidth > max_width) {
 		const totalSlides = document.querySelectorAll(".card").length / 1;
-		currentIndex = (currentIndex + 3) % totalSlides;
+		currentIndex = (currentIndex + 4) % totalSlides;
 		showSlide(currentIndex);
 	}
 }
@@ -27,7 +27,7 @@ function prevSlide() {
 		showSlide(currentIndex);
 	} else if (currentWidth > max_width) {
 		const totalSlides = document.querySelectorAll(".card").length / 1;
-		currentIndex = (currentIndex - 3 + totalSlides) % totalSlides;
+		currentIndex = (currentIndex - 4 + totalSlides) % totalSlides;
 		showSlide(currentIndex);
 	}
 }
