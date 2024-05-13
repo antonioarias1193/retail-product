@@ -2,7 +2,8 @@
   /* font-family: 'Cambria'; */
   /* font-family: 'Cambria'; */
   /* font-family: sans-serif; */
-  font-family: 'Lucida Sans Regular';
+  /* font-family: 'Lucida Sans Regular'; */
+  font-family: 'Trebuchet MS';
   margin: 0;
   padding: 0;
 }
@@ -169,7 +170,7 @@ li{
   /* background-color: antiquewhite; */
 }
 .product_category .spesifict_submenu_product{
-  display: flex;
+  display: none;
   flex-direction: column;
   position: relative;
   top: 0px;

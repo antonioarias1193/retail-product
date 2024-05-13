@@ -121,18 +121,20 @@
     flex-direction: column;
     height: 0;
     position: relative;
-    top: 200px;
+    top: 250px;
     left: 10vw;
-    font-size: 1.9rem;
+    font-size: 1.1rem;
     color: white;
     z-index: 1;
     text-shadow: 2px 2px 2px black;
+
+    width: 60vw;
   }
 
   /* Mobile Responsive */
   @media screen and (max-width:769px) {
     .list .slider_content{
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
   @media screen and (max-width:550px) {
