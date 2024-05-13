@@ -24,9 +24,12 @@
 @media (min-width:950px){
 
     .product_text_container_description{
+        /* margin-left: -50px; */
         display: flex;
         flex-direction: row;
+        width: 160%;
         gap: 100px;
+        /* background-color: aqua; */
     }
     /* Top Container */
     .product_description_afterparallax{
