@@ -65,82 +65,8 @@ function mekanik_desktop() {
 }
 // ==================================== Mobile CLick Dropdown Button ====================================
 // Navbar DropDown Menu Products
-if (layar_DesktopResponsive < 768) {
-	// ==================================== Mobile Access Mode ====================================
-	let categories_dropdown = document.getElementById(
-		"toggle_Dropdown_Navbar_Menu"
-	);
-	let categories_dropdown_temporary;
-	// Set tinggi elemen ke tinggi scroll content
-	// categories_dropdown.style.height = 0;
-	function dropdownFunction() {
-		if (categories_dropdown.clientHeight === 0) {
-			// Jika tinggi nol, atur tinggi ke tinggi scroll content
-			categories_dropdown.style.height =
-				categories_dropdown.scrollHeight + "px";
-			categories_dropdown_temporary = categories_dropdown.scrollHeight;
-		} else {
-			// Jika tinggi bukan nol, atur tinggi ke nol
-			categories_dropdown.style.height = 0;
-		}
-	}
-
-	// === Food Container ===
-	// Set tinggi elemen ke tinggi scroll content
-	let food_container_spesific_dropdown = document.getElementById(
-		"food_container_dropdown"
-	);
-
-	function food_container_categoriesDropdown() {
-		if (food_container_spesific_dropdown.clientHeight === 0) {
-			// Jika tinggi nol, atur tinggi ke tinggi scroll content
-			food_container_spesific_dropdown.style.height =
-				food_container_spesific_dropdown.scrollHeight - "100" + "px";
-			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
-			categories_dropdown.style.height =
-				categories_dropdown_temporary +
-				food_container_spesific_dropdown.scrollHeight +
-				"px";
-			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
-			beverageware_spesific_dropdown.style.height = 0;
-		} else {
-			// Jika tinggi bukan nol, atur tinggi ke nol
-			food_container_spesific_dropdown.style.height = 0;
-			categories_dropdown.style.height = categories_dropdown_temporary + "px";
-		}
-	}
-	// === Food Container ===
-
-	// === Beveragewares ===
-	// Set tinggi elemen ke tinggi scroll content
-	let beverageware_spesific_dropdown = document.getElementById(
-		"beverageware_dropdown"
-	);
-
-	function beverageware_categoriesDropdown() {
-		if (beverageware_spesific_dropdown.clientHeight === 0) {
-			// Jika tinggi nol, atur tinggi ke tinggi scroll content
-			beverageware_spesific_dropdown.style.height =
-				beverageware_spesific_dropdown.scrollHeight + "px";
-			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
-			categories_dropdown.style.height =
-				beverageware_spesific_dropdown.scrollHeight +
-				categories_dropdown_temporary +
-				"px";
-			// ------------------ Menyesuaikan ketinggian categories dengan spesific ------------------;
-			food_container_spesific_dropdown.style.height = 0;
-		} else {
-			// Jika tinggi bukan nol, atur tinggi ke nol
-			beverageware_spesific_dropdown.style.height = 0;
-			categories_dropdown.style.height = categories_dropdown_temporary + "px";
-		}
-	}
-	// === Beveragewares ===
-	// ==================================== (Mekanik Navbar) Mobile Access Mode ====================================
-	penanggulangan_error_layar(dropdownFunction());
-}
-
-// ==================================== Penanggulangan error Mobile Access Mode ====================================
+// if (layar_DesktopResponsive < 768) {
+// ==================================== Mobile Access Mode ====================================
 let categories_dropdown = document.getElementById(
 	"toggle_Dropdown_Navbar_Menu"
 );
@@ -208,7 +134,9 @@ function beverageware_categoriesDropdown() {
 		categories_dropdown.style.height = categories_dropdown_temporary + "px";
 	}
 }
-// ==================================== Penanggulangan error Mobile Access Mode ====================================
+// === Beveragewares ===
+// ==================================== (Mekanik Navbar) Mobile Access Mode ====================================
+// }
 
 // ==================================== Mobile CLick Dropdown Button ====================================
 // Semua isi div navbar ke html
