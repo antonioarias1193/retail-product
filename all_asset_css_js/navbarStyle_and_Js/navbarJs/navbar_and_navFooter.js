@@ -185,7 +185,15 @@ function navbar_html_classlist() {
 	let navDiv = document.getElementById("js_navbar_class");
 	navDiv.innerHTML = `
 	<nav class="navbar_container">
-            <a href="${takaware_Header}" class="nav_branding"> <img src="./images/Product/logo_Takaware.png" width="200px" alt="" /></a>
+            <a href="${takaware_Header}" class="nav_branding"> 
+			<div class="nav_branding_container">
+				<div class="nav_branding_container_name">
+					<h1 class="nav_branding_container_name_Title">Takaware</h1>
+					<h1 class="nav_branding_container_name_R">&reg</h1>
+				</div>
+				<p class="nav_branding_container_description">HOME ESSENTIALS</p>
+			</div>
+			</a>
         
             <ul class="nav_menu">
                 <li class="nav_item">
@@ -219,7 +227,7 @@ function navbar_html_classlist() {
                             </div>
                             <div class="product_category" id="desk_hoverBeverageware">
                                 <div class="product_category_links_dropdown">
-                                    <a class="category_links" href="#">Beverageware</a>
+                                    <a class="category_links" href="#">Drinkware</a>
                                     <button onclick="beverageware_categoriesDropdown()" class="dropdown_spesific_menu"><i class="dropdown_icon fa fa-caret-down"></i></button>
                                 </div>
                                 <div>
@@ -373,7 +381,18 @@ function footer_navbar_html_classlist() {
 
 	footer_navdiv.innerHTML = `
 	<div class="navbar_footer">
-	<a href="${takaware_Header}" class="navFooter_Branding">Takaware</a>
+	<a href="${takaware_Header}" class="navFooter_Branding"><div class="footer_nav_branding_container">
+	<div class="footer_nav_branding_container_name">
+		<h1 class="footer_nav_branding_container_name_Title">Takaware</h1>
+		<h1 class="footer_nav_branding_container_name_R">&reg</h1>
+	</div>
+	<p class="footer_nav_branding_container_description">HOME ESSENTIALS</p>
+</div></a>
+            <a href="${takaware_Header}" class="navFooter_Links">
+                <div class="About">
+                    Home
+                </div>
+            </a>
             <a href="${about_menu}" class="navFooter_Links">
                 <div class="About">
                     About
@@ -431,7 +450,7 @@ function footer_navbar_html_classlist() {
                     <div class="footer_product_category">
 						<div class="footer_container_foodcontainer_dropdown">
 							<a href="#">
-								<div class="footer_category_links">Beverageware</div>
+								<div class="footer_category_links">Drinkware</div>
 							</a>
 							<div onclick="footer_beverageware_categoriesDropdown()" class="footer_spesific_dropdown_button"><i class="fa fa-caret-down"></i></div>
 						</div>

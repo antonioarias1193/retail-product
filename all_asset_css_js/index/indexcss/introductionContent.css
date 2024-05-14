@@ -134,7 +134,7 @@
   /* Mobile Responsive */
   @media screen and (max-width:769px) {
     .list .slider_content{
-      font-size: 1.3rem;
+      font-size: 0.9rem;
     }
   }
   @media screen and (max-width:550px) {

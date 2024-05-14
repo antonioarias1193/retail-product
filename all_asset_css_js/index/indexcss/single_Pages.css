@@ -33,7 +33,7 @@
     color: white;
     transition: 0.2s ease-in-out;
     /* text-shadow: 1px 1px 1px black,-1px -1px 1px black,1px -1px 1px black; */
-    text-shadow: 2px 2px 2px black;
+    /* text-shadow: 2px 2px 2px black; */
 }
 .single_Page .page_text button:hover{
     background-color: rgb(68, 0, 255);
@@ -78,9 +78,19 @@
 @media screen and (max-width:550px) {
     .single_Page.single_Page .container_overlay{
         align-items: center;
+        backdrop-filter: blur(1px);
+
         justify-content: center;
     }
     .single_Page .page_text{
         width: 300px;
+        padding: 20px 20px;
+        border-radius: 40px;
+        font-weight: 500;
+        color: white;
+        line-height: 50px;
+    }
+    .single_Page .page_text p{
+        font-size: 1.4rem;
     }
 }
