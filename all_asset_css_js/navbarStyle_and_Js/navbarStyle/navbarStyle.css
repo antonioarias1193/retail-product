@@ -7,11 +7,10 @@
 }
 
 *{
-  /* font-family: 'Cambria'; */
-  /* font-family: 'Cambria'; */
-  /* font-family: sans-serif; */
-  /* font-family: 'Lucida Sans Regular'; */
-  font-family: 'Trebuchet MS';
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: normal; */
+  font-style: normal;
   margin: 0;
   padding: 0;
 }

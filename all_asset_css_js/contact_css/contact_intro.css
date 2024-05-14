@@ -1,5 +1,6 @@
 .contact_introduction {
-    margin-bottom: 40vh;
+    margin-bottom: 100vh;
+
 }
 @media screen and (min-width:769px){
     .contact_intro_image{
@@ -7,19 +8,28 @@
         justify-content: end;
     }
     .contact_intro_image .image{
-        width: 60vw;
-        align-self: flex-end;
-        justify-self: end;
+        width: 40vw;
+        /* align-self: flex-end; */
+        /* justify-self: end; */
         
     }
     
-    .contact_introduction .intro_teks{
-        display: block;
+    .contact_intro_text_container{
+        display: flex;
+        flex-direction: column;
         position: absolute;
-        top: 200px;
-        left: 10vw;
+        top: 100px;
+        gap: 40px;
+        left: 50px;
+        
+    }
+    .contact_introduction .intro_teks{
+        /* display: block; */
+        /* position: absolute; */
+        /* top: 200px; */
+        /* left: 10vw; */
 
-        font-size: 3rem;
+        /* font-size: 3rem; */
     }
 }
 @media screen and (max-width:769px){
@@ -37,9 +47,9 @@
     .contact_introduction .intro_teks{
         display: block;
         position: absolute;
-        top: 90px;
+        top: 40px;
         left: 10vw;
 
-        font-size: calc(2rem * 20vw) ;
+        font-size: 1.5rem;
     }
 }
